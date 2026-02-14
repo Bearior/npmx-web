@@ -1,0 +1,19 @@
+company-web/
+├── src/
+│   ├── app/
+│   │   ├── globals.css          — Tailwind directives + custom utilities
+│   │   ├── layout.tsx           — Root layout with Inter font + TopMenu
+│   │   └── page.tsx             — Main page assembling all sections
+│   └── components/
+│       ├── TopMenu.tsx          — Fixed navbar with scroll effect + MUI mobile Drawer
+│       ├── Banner.tsx           — Full-screen hero with rotating headlines + gradient bg
+│       ├── AboutSection.tsx     — Company background + animated stats cards
+│       ├── ProductSection.tsx   — 6-product grid with MUI Cards + scroll-in animations
+│       ├── TeamSection.tsx      — Leadership team with MUI Avatars + social icons
+│       ├── ContactSection.tsx   — Contact info + MUI form with TextFields
+│       └── Footer.tsx           — Multi-column footer with links + social icons
+├── tailwind.config.ts           — Extended with custom colors, animations, keyframes
+├── postcss.config.mjs
+├── next.config.mjs
+├── tsconfig.json                — Paths alias @/* → ./src/*
+└── package.json
