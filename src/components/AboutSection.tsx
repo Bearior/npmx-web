@@ -14,10 +14,10 @@ export default function AboutSection() {
   const { t } = useLang();
 
   const STATS = [
-    { icon: <RocketLaunchIcon />, value: "50+", labelKey: "about.stat1" },
-    { icon: <GroupsIcon />, value: "15+", labelKey: "about.stat2" },
-    { icon: <FavoriteIcon />, value: "40+", labelKey: "about.stat3" },
-    { icon: <WorkHistoryIcon />, value: "5+", labelKey: "about.stat4" },
+    { icon: <RocketLaunchIcon />, value: "20+", labelKey: "about.stat1" },
+    { icon: <GroupsIcon />, value: "10+", labelKey: "about.stat2" },
+    { icon: <FavoriteIcon />, value: "15+", labelKey: "about.stat3" },
+    { icon: <WorkHistoryIcon />, value: "6+", labelKey: "about.stat4" },
   ];
 
   useEffect(() => {

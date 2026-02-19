@@ -45,14 +45,14 @@ const dict: Record<string, Record<Lang, string>> = {
   // ── About ──
   "about.chip": { en: "About Us", th: "เกี่ยวกับเรา" },
   "about.title1": { en: "Building the Future of", th: "สร้างอนาคตของ" },
-  "about.titleAccent": { en: "Technology", th: "เทคโนโลยี" },
+  "about.titleAccent": { en: "Healthcare", th: "การแพทย์" },
   "about.p1": {
-    en: "NPMx Technologies is a passionate tech team specializing in web development solutions. From simple frontend pages to complex full-service systems, we deliver modern, reliable, and scalable digital products tailored to your business needs.",
-    th: "NPMx Technologies คือทีมเทคโนโลยีที่เชี่ยวชาญด้านการพัฒนาเว็บ ตั้งแต่หน้าเว็บ Frontend ธรรมดา ไปจนถึงระบบ Full-service ที่ซับซ้อน เรามอบผลิตภัณฑ์ดิจิทัลที่ทันสมัย เชื่อถือได้ และขยายได้ ตรงตามความต้องการธุรกิจของคุณ",
+    en: "NPMx Technologies is a medical software house specializing in healthcare technology solutions. From clinic management systems to AI-powered diagnostic tools, we deliver secure, compliant, and innovative digital products tailored to the healthcare industry.",
+    th: "NPMx Technologies คือ Software House ด้านการแพทย์ที่เชี่ยวชาญในโซลูชันเทคโนโลยีสุขภาพ ตั้งแต่ระบบจัดการคลินิกไปจนถึงเครื่องมือวินิจฉัยด้วย AI เรามอบผลิตภัณฑ์ดิจิทัลที่ปลอดภัย ได้มาตรฐาน และสร้างสรรค์สำหรับอุตสาหกรรมการแพทย์",
   },
   "about.p2": {
-    en: "Our mission: empower businesses with technology that scales. We combine deep technical expertise with a passion for innovation to solve complex challenges and unlock new opportunities.",
-    th: "พันธกิจของเรา: เสริมพลังธุรกิจด้วยเทคโนโลยีที่ขยายได้ เรารวมความเชี่ยวชาญทางเทคนิคเข้ากับความหลงไหลในนวัตกรรม เพื่อแก้ปัญหาที่ซับซ้อนและเปิดโอกาสใหม่ๆ",
+    en: "Our mission: empower healthcare providers with technology that transforms patient care. We combine deep medical domain expertise with cutting-edge innovation to solve complex healthcare challenges and improve patient outcomes.",
+    th: "พันธกิจของเรา: เสริมพลังผู้ให้บริการด้านสุขภาพด้วยเทคโนโลยีที่เปลี่ยนแปลงการดูแลผู้ป่วย เรารวมความเชี่ยวชาญด้านการแพทย์เข้ากับนวัตกรรมล้ำสมัย เพื่อแก้ปัญหาด้านสุขภาพที่ซับซ้อนและพัฒนาผลลัพธ์ของผู้ป่วย",
   },
   "about.stat1": { en: "Projects Delivered", th: "โปรเจกต์สำเร็จ" },
   "about.stat2": { en: "Team Members", th: "สมาชิกในทีม" },
