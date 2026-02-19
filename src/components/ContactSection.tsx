@@ -8,18 +8,39 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import SendIcon from "@mui/icons-material/Send";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useLang } from "@/providers/LangProvider";
 
 export default function ContactSection() {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const { t } = useLang();
 
   const CONTACT_INFO = [
-    { icon: <EmailIcon />, labelKey: "contact.email", value: "hello@npmxtech.com" },
-    { icon: <PhoneIcon />, labelKey: "contact.phone", value: "+66 (0) 98-765-4321" },
+    { icon: <EmailIcon />, labelKey: "contact.email", value: "npmxtech@gmail.com" },
+    { icon: <PhoneIcon />, labelKey: "contact.phone", value: "+66 (0) 93-662-9299" },
     { icon: <LocationOnIcon />, labelKey: "contact.office", value: "Bangkok, Thailand" },
   ];
+
+  const handleInputChange = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [field]: e.target.value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { firstName, lastName, email, subject, message } = formData;
+    const fullName = `${firstName} ${lastName}`.trim();
+    const body = `Name: ${fullName}\nEmail: ${email}\n\n${message}`;
+    const mailtoLink = `mailto:npmxtech@gmail.com?subject=${encodeURIComponent(subject || "Contact from Website")}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -87,24 +108,33 @@ export default function ContactSection() {
               ))}
             </div>
 
-            <div className="mt-8 rounded-2xl overflow-hidden border border-gray-200 aspect-video bg-gray-100 flex items-center justify-center">
-              <p className="text-gray-400 text-sm">
-                {t("contact.map")}
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/company/npmx-technologies/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 rounded-2xl overflow-hidden border border-gray-200 aspect-video bg-gradient-to-br from-[#0077b5]/10 to-[#0077b5]/5 flex flex-col items-center justify-center gap-3 hover:shadow-lg hover:border-[#0077b5]/30 transition-all cursor-pointer"
+            >
+              <div className="w-16 h-16 rounded-full bg-[#0077b5] text-white flex items-center justify-center">
+                <LinkedInIcon sx={{ fontSize: 32 }} />
+              </div>
+              <p className="text-[#0077b5] font-semibold text-lg">{t("contact.followLinkedIn")}</p>
+              <p className="text-gray-500 text-sm">NPMX Technologies</p>
+            </a>
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <h3 className="text-xl font-bold text-primary mb-6">
               {t("contact.formTitle")}
             </h3>
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-4">
                 <TextField
                   label={t("contact.firstName")}
                   variant="outlined"
                   size="small"
                   fullWidth
+                  value={formData.firstName}
+                  onChange={handleInputChange("firstName")}
                   sx={inputSx}
                 />
                 <TextField
@@ -112,6 +142,8 @@ export default function ContactSection() {
                   variant="outlined"
                   size="small"
                   fullWidth
+                  value={formData.lastName}
+                  onChange={handleInputChange("lastName")}
                   sx={inputSx}
                 />
               </div>
@@ -120,6 +152,8 @@ export default function ContactSection() {
                 variant="outlined"
                 size="small"
                 fullWidth
+                value={formData.email}
+                onChange={handleInputChange("email")}
                 sx={inputSx}
               />
               <TextField
@@ -127,6 +161,8 @@ export default function ContactSection() {
                 variant="outlined"
                 size="small"
                 fullWidth
+                value={formData.subject}
+                onChange={handleInputChange("subject")}
                 sx={inputSx}
               />
               <TextField
@@ -136,6 +172,8 @@ export default function ContactSection() {
                 fullWidth
                 multiline
                 rows={4}
+                value={formData.message}
+                onChange={handleInputChange("message")}
                 sx={inputSx}
               />
               <Button

@@ -53,7 +53,7 @@ export default function TopMenu() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navCls}`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center h-[68px] px-6">
-          <Link href="#hero" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <div
               className={`text-2xl font-extrabold tracking-tight transition-colors ${logoCls}`}
             >
