@@ -32,7 +32,7 @@ const TEAM = [
     education: "Computer Engineering, Chulalongkorn University",
     bio: "Specialized in project management, hardware IoT, health knowledge, and AI/ML implementation.",
     avatar: "P",
-    image: "/images/p.png",
+    image: "/images/p.jpg",
     imagePosition: "center 30%",
     color: "#8b5cf6",
     link: "/cv/peerapat",
