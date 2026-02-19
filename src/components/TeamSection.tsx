@@ -1,19 +1,32 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import IconButton from "@mui/material/IconButton";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import Image from "next/image";
 import { useLang } from "@/providers/LangProvider";
 
-const TEAM = [
+interface TeamMember {
+  name: string;
+  role: string;
+  education: string;
+  bio: string;
+  avatar: string;
+  image: string;
+  imagePosition?: string;
+  color: string;
+  link: string;
+  linkType: string;
+  video: string;
+}
+
+const TEAM: TeamMember[] = [
   {
     name: "Saktawat Pairachsaranon",
     role: "Chief Executive Officer",
@@ -126,14 +139,16 @@ export default function TeamSection() {
                 />
               </div>
               <div className="relative mb-3">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={80}
+                  height={80}
                   className="w-20 h-20 rounded-full object-cover mx-auto transition-transform duration-300 group-hover:scale-110"
                   style={{
                     boxShadow: `0 4px 14px ${member.color}30`,
                     border: `3px solid ${member.color}20`,
-                    objectPosition: (member as any).imagePosition || "center",
+                    objectPosition: member.imagePosition || "center",
                   }}
                 />
               </div>
@@ -182,9 +197,11 @@ export default function TeamSection() {
           }}
         >
           <div className="relative overflow-hidden rounded-2xl shadow-xl group">
-            <img 
+            <Image 
               src="/images/team.png" 
               alt="Our Team" 
+              width={896}
+              height={504}
               className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

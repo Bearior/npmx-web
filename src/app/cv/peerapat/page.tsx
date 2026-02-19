@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import DownloadIcon from "@mui/icons-material/Download";
-import { useLang } from "@/providers/LangProvider";
-
 export default function PeerapatCVPage() {
-  const { t } = useLang();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
