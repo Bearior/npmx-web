@@ -15,8 +15,6 @@ import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import InsightsIcon from "@mui/icons-material/Insights";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { useLang } from "@/providers/LangProvider";
 
 const PRODUCTS = [
@@ -116,7 +114,6 @@ const BUSINESS_PRODUCTS = [
 export default function ProductSection() {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-  const [businessExpanded, setBusinessExpanded] = useState(true);
   const { t } = useLang();
 
   useEffect(() => {
@@ -155,6 +152,15 @@ export default function ProductSection() {
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             {t("services.sub")}
           </p>
+        </div>
+
+        {/* Healthcare Solutions Divider */}
+        <div className="flex items-center gap-4 mb-12 w-full">
+          <div className="flex-1 h-px bg-gray-200" />
+          <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">
+            Healthcare Solutions
+          </span>
+          <div className="flex-1 h-px bg-gray-200" />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -261,31 +267,17 @@ export default function ProductSection() {
           ))}
         </div>
 
-        {/* Divider - Clickable to toggle */}
-        <button
-          onClick={() => setBusinessExpanded(!businessExpanded)}
-          className="flex items-center gap-4 my-16 w-full group cursor-pointer bg-transparent border-none"
-        >
-          <div className="flex-1 h-px bg-gray-200 group-hover:bg-gray-300 transition-colors" />
-          <div className="flex items-center gap-2">
-            <span className="text-gray-400 group-hover:text-gray-600 text-sm font-medium uppercase tracking-wider transition-colors">
-              Business Operations
-            </span>
-            {businessExpanded ? (
-              <ExpandLessIcon sx={{ color: "#9ca3af", fontSize: 20 }} className="group-hover:text-gray-600" />
-            ) : (
-              <ExpandMoreIcon sx={{ color: "#9ca3af", fontSize: 20 }} className="group-hover:text-gray-600" />
-            )}
-          </div>
-          <div className="flex-1 h-px bg-gray-200 group-hover:bg-gray-300 transition-colors" />
-        </button>
+        {/* Divider */}
+        <div className="flex items-center gap-4 my-16 w-full">
+          <div className="flex-1 h-px bg-gray-200" />
+          <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">
+            Business Operations
+          </span>
+          <div className="flex-1 h-px bg-gray-200" />
+        </div>
 
-        {/* Business Products - Collapsible */}
-        <div
-          className={`grid md:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-500 ease-in-out overflow-hidden ${
-            businessExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
+        {/* Business Products */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {BUSINESS_PRODUCTS.map((product, i) => (
             <Card
               key={i}
@@ -296,7 +288,7 @@ export default function ProductSection() {
                 transition: "all 0.4s cubic-bezier(.4,0,.2,1)",
                 opacity: visible ? 1 : 0,
                 transform: visible ? "translateY(0)" : "translateY(40px)",
-                transitionDelay: `${(i + 4) * 150}ms`,
+                transitionDelay: `${i * 150}ms`,
                 display: "flex",
                 flexDirection: "column",
                 "&:hover": {
