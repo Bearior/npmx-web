@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import Chip from "@mui/material/Chip";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -60,26 +59,6 @@ export default function ContactSection() {
       className="py-24 md:py-32 bg-gradient-to-b from-white to-slate-50"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <Chip
-            label={t("contact.chip")}
-            size="small"
-            sx={{
-              bgcolor: "#eff6ff",
-              color: "#3b82f6",
-              fontWeight: 700,
-              mb: 2,
-            }}
-          />
-          <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
-            {t("contact.title1")}{" "}
-            <span className="text-accent">{t("contact.titleAccent")}</span>
-          </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            {t("contact.sub")}
-          </p>
-        </div>
-
         <div
           className="grid md:grid-cols-2 gap-12 items-start"
           style={{
@@ -89,7 +68,7 @@ export default function ContactSection() {
           }}
         >
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-6">
+            <h3 className="text-2xl font-bold text-accent mb-6">
               {t("contact.getInTouch")}
             </h3>
             <div className="space-y-6">
@@ -118,7 +97,7 @@ export default function ContactSection() {
                 <LinkedInIcon sx={{ fontSize: 32 }} />
               </div>
               <p className="text-[#0077b5] font-semibold text-lg">{t("contact.followLinkedIn")}</p>
-              <p className="text-gray-500 text-sm">NPMX Technologies</p>
+              <p className="text-gray-500 text-sm">NPMx Technologies</p>
             </a>
           </div>
 

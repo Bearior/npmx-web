@@ -17,7 +17,6 @@ const NAV_KEYS = [
   { key: "nav.about", href: "#about" },
   { key: "nav.services", href: "#products" },
   { key: "nav.team", href: "#team" },
-  { key: "nav.contact", href: "#contact" },
 ];
 
 export default function TopMenu() {

@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Sarabun } from "next/font/google";
 import "./globals.css";
 import TopMenu from "@/components/TopMenu";
 import { LangProvider } from "@/providers/LangProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const sarabun = Sarabun({
+  subsets: ["latin", "thai"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sarabun",
+});
 
 export const metadata: Metadata = {
   title: "NPMx Technologies — Innovate. Build. Scale.",
@@ -19,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${sarabun.variable}`}>
         <LangProvider>
           <TopMenu />
           {children}

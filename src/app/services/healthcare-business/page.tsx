@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useEffect, useState } from "react";
 import { useLang } from "@/providers/LangProvider";
 import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
@@ -13,7 +14,20 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import Footer from "@/components/Footer";
 
 export default function HealthcareBusinessPage() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
   const { t } = useLang();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.1 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
   const FEATURES = [
     {
@@ -41,7 +55,7 @@ export default function HealthcareBusinessPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a5f] to-[#0f172a] overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a5f] to-[#0f172a] overflow-x-hidden">
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-[100px]" />
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-rose-500/20 rounded-full blur-[80px]" />
         
@@ -84,7 +98,7 @@ export default function HealthcareBusinessPage() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-slate-50">
+      <section ref={ref} className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
             {t("service5.sectionTitle")}
@@ -98,6 +112,12 @@ export default function HealthcareBusinessPage() {
               <div
                 key={i}
                 className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-pink-200 transition-all"
+                style={{
+                  opacity: visible ? 1 : 0,
+                  transform: visible ? "translateY(0)" : "translateY(40px)",
+                  transition: "all 0.4s cubic-bezier(.4,0,.2,1)",
+                  transitionDelay: `${i * 150}ms`,
+                }}
               >
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-pink-50 text-pink-500 mb-4">
                   {feature.icon}

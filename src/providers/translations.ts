@@ -67,7 +67,7 @@ export const dict: Record<string, Record<Lang, string>> = {
 
   // Product 2 - Patient Platform
   "product.2.title": { en: "Patient Management Platform", th: "แพลตฟอร์มจัดการผู้ป่วย" },
-  "product.2.subtitle": { en: "Smart Healthcare Operations", th: "ระบบปฏิบัติการสุขภาพอัจฉริยะ" },
+  "product.2.subtitle": { en: "Smart Healthcare", th: "ระบบปฏิบัติการสุขภาพอัจฉริยะ" },
   "product.2.desc": {
     en: "Intelligent platforms for appointment booking, patient records, health tracking, and clinical dashboards. Designed for modern healthcare workflows.",
     th: "แพลตฟอร์มอัจฉริยะสำหรับการจองนัดหมาย บันทึกผู้ป่วย การติดตามสุขภาพ และแดชบอร์ดทางคลินิก ออกแบบมาเพื่อกระบวนการทำงานด้านสุขภาพสมัยใหม่",
@@ -82,7 +82,7 @@ export const dict: Record<string, Record<Lang, string>> = {
 
   // Product 3 - Enterprise Hospital
   "product.3.title": { en: "Enterprise Medical System", th: "ระบบการแพทย์ระดับองค์กร" },
-  "product.3.subtitle": { en: "Hospital-Grade Infrastructure", th: "โครงสร้างพื้นฐานระดับโรงพยาบาล" },
+  "product.3.subtitle": { en: "Hospital Infrastructure", th: "โครงสร้างพื้นฐานระดับโรงพยาบาล" },
   "product.3.desc": {
     en: "Enterprise-grade systems for hospitals, multi-location clinics, and healthcare networks. HIS integration, advanced analytics, and precision medicine workflows.",
     th: "ระบบระดับองค์กรสำหรับโรงพยาบาล คลินิกหลายสาขา และเครือข่ายสุขภาพ เชื่อมต่อ HIS วิเคราะห์ขั้นสูง และกระบวนการแพทย์แม่นยำ",
@@ -112,7 +112,7 @@ export const dict: Record<string, Record<Lang, string>> = {
 
   // Product 5 - Business Management for Healthcare
   "product.5.title": { en: "Healthcare Business Management", th: "การจัดการธุรกิจสุขภาพ" },
-  "product.5.subtitle": { en: "Clinic Operations Excellence", th: "ความเป็นเลิศด้านการดำเนินงานคลินิก" },
+  "product.5.subtitle": { en: "All in one Package", th: "แพ็คเกจครบวงจร" },
   "product.5.desc": {
     en: "Comprehensive business management solutions for clinics and healthcare providers. Financial tracking, staff management, inventory control, and operational analytics to grow your practice.",
     th: "โซลูชันการจัดการธุรกิจครบวงจรสำหรับคลินิกและผู้ให้บริการด้านสุขภาพ การติดตามการเงิน การจัดการพนักงาน การควบคุมสินค้าคงคลัง และการวิเคราะห์การดำเนินงานเพื่อขยายธุรกิจของคุณ",
