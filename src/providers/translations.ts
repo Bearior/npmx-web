@@ -171,6 +171,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   },
 
   "product.learnMore": { en: "Learn More", th: "เรียนรู้เพิ่มเติม" },
+  "product.viewDemo": { en: "Demo", th: "ดูตัวอย่าง" },
 
   // ── Service Pages Common ──
   "service.backToServices": { en: "Back to Services", th: "บริการ" },

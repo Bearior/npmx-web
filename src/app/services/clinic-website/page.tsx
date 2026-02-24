@@ -11,6 +11,7 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import SearchIcon from "@mui/icons-material/Search";
 import DevicesIcon from "@mui/icons-material/Devices";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Footer from "@/components/Footer";
 
 export default function ClinicWebsitePage() {
@@ -103,7 +104,7 @@ export default function ClinicWebsitePage() {
             {t("service1.heroDesc")}
           </p>
           
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 items-center">
             {["product.1.tag1", "product.1.tag2", "product.1.tag3"].map((tagKey) => (
               <Chip
                 key={tagKey}
@@ -112,6 +113,28 @@ export default function ClinicWebsitePage() {
               />
             ))}
           </div>
+
+          <Button
+            href="https://npmx-showcase-web.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="contained"
+            endIcon={<OpenInNewIcon />}
+            sx={{
+              mt: 4,
+              bgcolor: "#3b82f6",
+              color: "#fff",
+              px: 4,
+              py: 1.5,
+              fontWeight: 700,
+              borderRadius: "9999px",
+              textTransform: "none",
+              fontSize: "1rem",
+              "&:hover": { bgcolor: "#2563eb" },
+            }}
+          >
+            {t("product.viewDemo")}
+          </Button>
         </div>
       </section>
 
@@ -190,22 +213,44 @@ export default function ClinicWebsitePage() {
           <p className="text-blue-100 text-lg mb-8">
             {t("service1.ctaDesc")}
           </p>
-          <Button
-            href="/#contact"
-            variant="contained"
-            size="large"
-            sx={{
-              bgcolor: "#fff",
-              color: "#2563eb",
-              px: 6,
-              py: 1.5,
-              fontWeight: 700,
-              borderRadius: "9999px",
-              "&:hover": { bgcolor: "#f0f9ff" },
-            }}
-          >
-            {t("service.getStarted")}
-          </Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
+              href="https://npmx-showcase-web.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="contained"
+              size="large"
+              endIcon={<OpenInNewIcon />}
+              sx={{
+                bgcolor: "#fff",
+                color: "#2563eb",
+                px: 6,
+                py: 1.5,
+                fontWeight: 700,
+                borderRadius: "9999px",
+                textTransform: "none",
+                "&:hover": { bgcolor: "#f0f9ff" },
+              }}
+            >
+              {t("product.viewDemo")}
+            </Button>
+            <Button
+              href="/#contact"
+              variant="outlined"
+              size="large"
+              sx={{
+                borderColor: "#fff",
+                color: "#fff",
+                px: 6,
+                py: 1.5,
+                fontWeight: 700,
+                borderRadius: "9999px",
+                "&:hover": { borderColor: "#f0f9ff", bgcolor: "rgba(255,255,255,0.1)" },
+              }}
+            >
+              {t("service.getStarted")}
+            </Button>
+          </div>
         </div>
       </section>
 

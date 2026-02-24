@@ -28,6 +28,7 @@ const PRODUCTS = [
     color: "#3b82f6",
     goals: ["Fast", "SEO-friendly", "Low maintenance", "Affordable"],
     href: "/services/clinic-website",
+    demoUrl: "https://npmx-showcase-web.vercel.app/",
   },
   {
     icon: <DashboardCustomizeIcon sx={{ fontSize: 44 }} />,
@@ -244,24 +245,48 @@ export default function ProductSection() {
                   ))}
                 </div>
 
+
                 {/* Use cases */}
                 <p className="text-xs text-gray-400 italic mb-4">
                   {t(product.usecaseKey)}
                 </p>
 
-                <Button
-                  href={product.href}
-                  endIcon={<ArrowForwardIcon />}
-                  sx={{
-                    textTransform: "none",
-                    fontWeight: 600,
-                    color: product.color,
-                    p: 0,
-                    "&:hover": { bgcolor: "transparent", opacity: 0.8 },
-                  }}
-                >
-                  {t("product.learnMore")}
-                </Button>
+                <div className="flex items-center gap-3">
+                   {"demoUrl" in product && product.demoUrl && (
+                    <Button
+                      href={product.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{
+                        textTransform: "none",
+                        fontWeight: 600,
+                        color: "#fff",
+                        bgcolor: product.color,
+                        px: 2,
+                        py: 0.5,
+                        borderRadius: "9999px",
+                        fontSize: "0.8rem",
+                        "&:hover": { bgcolor: product.color, opacity: 0.85 },
+                      }}
+                    >
+                      {t("product.viewDemo")}
+                    </Button>
+                  )}
+                  
+                  <Button
+                    href={product.href}
+                    endIcon={<ArrowForwardIcon />}
+                    sx={{
+                      textTransform: "none",
+                      fontWeight: 600,
+                      color: product.color,
+                      p: 0,
+                      "&:hover": { bgcolor: "transparent", opacity: 0.8 },
+                    }}
+                  >
+                    {t("product.learnMore")}
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
