@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "NPMx Technologies",
     images: [
       {
-        url: "https://www.npmxtech.com/images/og-logo.png",
+        url: "https://www.npmxtech.com/images/logo.jpg",
         width: 1200,
         height: 630,
       },
