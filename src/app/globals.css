@@ -26,7 +26,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), var(--font-sarabun), Arial, Helvetica, sans-serif;
 }
 
 a {

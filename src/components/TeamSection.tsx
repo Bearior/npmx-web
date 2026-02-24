@@ -1,11 +1,9 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import IconButton from "@mui/material/IconButton";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
@@ -21,7 +19,7 @@ const TEAM = [
     bio: "Specialized in health tech business modeling, published healthtech startup founder, leading market strategy.",
     avatar: "S",
     image: "/images/n.png",
-    color: "#3b82f6",
+    color: "#10b981",
     link: "https://www.linkedin.com/in/saktawatpairachsaranon/",
     linkType: "linkedin",
     video: "/videos/nice.mp4",
@@ -46,7 +44,7 @@ const TEAM = [
     bio: "Specialized in full-stack development, building scalable healthcare platforms and systems.",
     avatar: "K",
     image: "/images/m.png",
-    color: "#10b981",
+    color: "#3b82f6",
     link: "https://www.linkedin.com/in/khunasin-suksri-bb8796293/",
     linkType: "linkedin",
     video: "/videos/mhee.mp4",
@@ -133,7 +131,7 @@ export default function TeamSection() {
                   style={{
                     boxShadow: `0 4px 14px ${member.color}30`,
                     border: `3px solid ${member.color}20`,
-                    objectPosition: (member as any).imagePosition || "center",
+                    objectPosition: (member as { imagePosition?: string }).imagePosition || "center",
                   }}
                 />
               </div>

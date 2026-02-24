@@ -143,29 +143,6 @@ export default function TopMenu() {
               />
             </ListItemButton>
           ))}
-          <ListItemButton
-            component="a"
-            href="#contact"
-            onClick={() => setDrawerOpen(false)}
-            sx={{
-              bgcolor: "rgba(59,130,246,0.2)",
-              "&:hover": { bgcolor: "rgba(59,130,246,0.3)" },
-              px: 4,
-              py: 1.5,
-              mt: 2,
-              mx: 2,
-              borderRadius: 2,
-            }}
-          >
-            <ListItemText
-              primary={t("nav.getInTouch")}
-              primaryTypographyProps={{
-                fontWeight: 600,
-                fontSize: "1.1rem",
-                color: "#3b82f6",
-              }}
-            />
-          </ListItemButton>
         </List>
       </Drawer>
     </>

@@ -83,9 +83,13 @@ export default function Footer() {
 
           {/* Business Operations */}
           <div>
-            <h4 className="font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">
-              {t("footer.business")}
-            </h4>
+            <div className="flex items-center gap-4 my-8 w-full">
+              <div className="flex-1 h-px bg-gray-200" />
+              <h4 className="font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">
+                {t("footer.business")}
+              </h4>
+              <div className="flex-1 h-px bg-gray-200" />
+            </div>
             <ul className="space-y-2">
               {BUSINESS.map((item) => (
                 <li key={item.href}>

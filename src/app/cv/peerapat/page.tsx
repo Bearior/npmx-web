@@ -1,8 +1,5 @@
 "use client";
 
-import Button from "@mui/material/Button";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-
 import { useEffect } from "react";
 
 export default function PeerapatCVPage() {
