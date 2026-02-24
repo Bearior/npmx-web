@@ -99,7 +99,7 @@ export default function Banner() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
         <a href="#about">
           <ArrowDownwardIcon sx={{ color: "rgba(255,255,255,0.5)", fontSize: 32 }} />
         </a>

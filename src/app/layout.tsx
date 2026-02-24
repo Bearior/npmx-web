@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "NPMx Technologies",
     images: [
       {
-        url: "https://scontent.fbkk12-1.fna.fbcdn.net/v/t39.30808-6/641440044_122093559873261574_3468879041835137306_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=KmRPYopSi3YQ7kNvwEfgUvj&_nc_oc=Adk2FAx7wga9Ts_qU7bcRf6PYfp_WjLFC7jliRJRAFGYsD-KHK2OV0ohtGYT_39v3LojoqZ7hghSPpBs0ORDdti6&_nc_zt=23&_nc_ht=scontent.fbkk12-1.fna&_nc_gid=bxUmxQUMnYTFbtgNYLOZ8g&oh=00_AftH5q2MI9edTvDRon9UvdXH3O-n6YXspm5suXjap6xQ_Q&oe=69A33448", // MUST be absolute URL
+        url: "https://www.npmxtech.com/images/og-logo.png",
         width: 1200,
         height: 630,
       },
