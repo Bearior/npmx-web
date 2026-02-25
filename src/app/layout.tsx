@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Sarabun } from "next/font/google";
 import "./globals.css";
 import TopMenu from "@/components/TopMenu";
+import CookieConsent from "@/components/CookieConsent";
 import { LangProvider } from "@/providers/LangProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -43,6 +44,7 @@ export default function RootLayout({
         <LangProvider>
           <TopMenu />
           {children}
+          <CookieConsent />
         </LangProvider>
       </body>
     </html>

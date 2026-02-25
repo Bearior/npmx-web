@@ -452,4 +452,13 @@ export const dict: Record<string, Record<Lang, string>> = {
     en: "Designed & built with Next.js, Tailwind CSS & Material UI",
     th: "ออกแบบและพัฒนาด้วย Next.js, Tailwind CSS & Material UI",
   },
+
+  // ── Cookie Consent ──
+  "cookie.title": { en: "We use cookies", th: "เราใช้คุกกี้" },
+  "cookie.description": {
+    en: "We use cookies to improve your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.",
+    th: "เราใช้คุกกี้เพื่อปรับปรุงประสบการณ์การท่องเว็บ วิเคราะห์การเข้าชมเว็บไซต์ และปรับแต่งเนื้อหา การคลิก \"ยอมรับ\" แสดงว่าคุณยินยอมให้เราใช้คุกกี้",
+  },
+  "cookie.accept": { en: "Accept", th: "ยอมรับ" },
+  "cookie.decline": { en: "Decline", th: "ปฏิเสธ" },
 };
