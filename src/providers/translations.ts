@@ -4,6 +4,15 @@ import type { Lang } from "./LangProvider";
    All translations live here
    ────────────────────────────────────────────── */
 export const dict: Record<string, Record<Lang, string>> = {
+    // Product Section Dividers (for SEO)
+    "productSection.healthTechDivider": {
+      en: "Healthcare Solutions",
+      th: "โซลูชันสุขภาพ"
+    },
+    "productSection.enterpriseDivider": {
+      en: "Pro Enterprise Solutions",
+      th: "โซลูชันองค์กร"
+    },
   // ── Navbar ──
   "nav.home": { en: "Home", th: "หน้าแรก" },
   "nav.about": { en: "About", th: "เกี่ยวกับเรา" },
@@ -15,11 +24,11 @@ export const dict: Record<string, Record<Lang, string>> = {
   // ── Hero / Banner ──
   "hero.tag": { en: "NPMx Technologies", th: "NPMx Technologies" },
   "hero.h1.1": { en: "Longevity Powered by Technology.", th: "อายุยืนยาวด้วยเทคโนโลยี" },
-  "hero.h1.2": { en: "Precision Medicine. Digital Future.", th: "การแพทย์แม่นยำ อนาคตดิจิทัล" },
+  "hero.h1.2": { en: "Enterprise Solutions. Digital Future.", th: "โซลูชันองค์กร อนาคตดิจิทัล" },
   "hero.h1.3": { en: "Extend Healthspan. Empower Care.", th: "ขยายสุขภาพ เสริมพลังการดูแล" },
   "hero.sub": {
-    en: "We design and implement high-performance digital infrastructures for clinics, hospitals, and longevity-focused healthcare providers, from intelligent patient platforms to enterprise-grade medical systems, helping organizations extend healthspan and thrive in the era of precision medicine.",
-    th: "เราออกแบบและพัฒนาโครงสร้างพื้นฐานดิจิทัลประสิทธิภาพสูงสำหรับคลินิก โรงพยาบาล และผู้ให้บริการด้านสุขภาพที่มุ่งเน้นความยืนยาว ตั้งแต่แพลตฟอร์มผู้ป่วยอัจฉริยะไปจนถึงระบบการแพทย์ระดับองค์กร ช่วยขยายประสุทธิภาพองค์กรและเติบโตในยุคการแพทย์แม่นยำ",
+    en: "We build digital infrastructure and on-demand solutions for enterprises—empowering organizations in health tech, medical, and beyond. From intelligent platforms to enterprise systems, we help you grow and innovate in the digital era.",
+    th: "เราสร้างโครงสร้างพื้นฐานดิจิทัลและโซลูชันสำหรับองค์กรตามความต้องการ เสริมพลังธุรกิจในด้านเฮลท์เทค การแพทย์ และอื่น ๆ ตั้งแต่แพลตฟอร์มอัจฉริยะไปจนถึงระบบระดับองค์กร เพื่อการเติบโตและนวัตกรรมในยุคดิจิทัล",
   },
   "hero.cta1": { en: "Explore Services", th: "ดูบริการของเรา" },
   "hero.cta2": { en: "Learn More", th: "เรียนรู้เพิ่มเติม" },
@@ -27,14 +36,15 @@ export const dict: Record<string, Record<Lang, string>> = {
   // ── About ──
   "about.chip": { en: "About Us", th: "เกี่ยวกับเรา" },
   "about.title1": { en: "Building the Future of", th: "สร้างอนาคตของ" },
-  "about.titleAccent": { en: "Healthcare", th: "การแพทย์" },
+  "about.titleAccent": { en: "Enterprise Solutions", th: "โซลูชันองค์กร" },
+  "about.titleHealthTech": { en: "Health Tech", th: "เฮลท์เทค" },
   "about.p1": {
-    en: "NPMx Technologies is a medical software house specializing in healthcare technology solutions. From clinic management systems to AI-powered diagnostic tools, we deliver secure, compliant, and innovative digital products tailored to the healthcare industry.",
-    th: "NPMx Technologies คือ Software House ด้านการแพทย์ที่เชี่ยวชาญในโซลูชันเทคโนโลยีสุขภาพ ตั้งแต่ระบบจัดการคลินิกไปจนถึงเครื่องมือวินิจฉัยด้วย AI เรามอบผลิตภัณฑ์ดิจิทัลที่ปลอดภัย ได้มาตรฐาน และสร้างสรรค์สำหรับอุตสาหกรรมการแพทย์",
+    en: "NPMx Solution is a technology company building digital infrastructure for enterprises on demand. Our solutions span health tech, medical, business, and more—empowering organizations with secure, innovative, and scalable systems.",
+    th: "NPMx Solution คือบริษัทเทคโนโลยีที่สร้างโครงสร้างพื้นฐานดิจิทัลสำหรับองค์กรตามความต้องการ โซลูชันของเราครอบคลุมทั้ง health tech การแพทย์ ธุรกิจ และอื่น ๆ — เสริมพลังองค์กรด้วยระบบที่ปลอดภัย นวัตกรรม และขยายได้",
   },
   "about.p2": {
-    en: "Our mission: empower healthcare providers with technology that transforms patient care. We combine deep medical domain expertise with cutting-edge innovation to solve complex healthcare challenges and improve patient outcomes.",
-    th: "พันธกิจของเรา: เสริมพลังผู้ให้บริการด้านสุขภาพด้วยเทคโนโลยีที่เปลี่ยนแปลงการดูแลผู้ป่วย เรารวมความเชี่ยวชาญด้านการแพทย์เข้ากับนวัตกรรมล้ำสมัย เพื่อแก้ปัญหาด้านสุขภาพที่ซับซ้อนและพัฒนาผลลัพธ์ของผู้ป่วย",
+    en: "Our vision: to be the leading provider of on-demand digital infrastructure for enterprises, enabling innovation across industries. We deliver solutions for health tech, medical, and beyond—empowering organizations to thrive in a digital world.",
+    th: "วิสัยทัศน์ของเรา: เป็นผู้นำด้านโครงสร้างพื้นฐานดิจิทัลสำหรับองค์กรตามความต้องการ ขับเคลื่อนนวัตกรรมในทุกอุตสาหกรรม เราส่งมอบโซลูชันสำหรับ health tech การแพทย์ และอื่น ๆ — เสริมพลังองค์กรให้เติบโตในโลกดิจิทัล",
   },
   "about.stat1": { en: "Projects Delivered", th: "โปรเจกต์สำเร็จ" },
   "about.stat2": { en: "Team Members", th: "สมาชิกในทีม" },
@@ -43,11 +53,11 @@ export const dict: Record<string, Record<Lang, string>> = {
 
   // ── Services / Products ──
   "services.chip": { en: "What We Build", th: "สิ่งที่เราสร้าง" },
-  "services.title1": { en: "Healthcare Solutions That", th: "โซลูชันสุขภาพที่" },
-  "services.titleAccent": { en: "Transform Care", th: "เปลี่ยนแปลงการดูแล" },
+  "services.title1": { en: "Enterprise Solutions That", th: "โซลูชันองค์กรที่" },
+  "services.titleAccent": { en: "Transform Business", th: "เปลี่ยนแปลงธุรกิจ" },
   "services.sub": {
-    en: "From clinic websites to enterprise hospital systems, we build digital infrastructure that empowers longevity-focused healthcare.",
-    th: "จากเว็บไซต์คลินิกไปจนถึงระบบโรงพยาบาลระดับองค์กร เราสร้างโครงสร้างพื้นฐานดิจิทัลที่เสริมพลังการดูแลสุขภาพเพื่อความยืนยาว",
+    en: "From enterprise infrastructure to healthcare systems, we build digital solutions that empower organizations to grow and innovate.",
+    th: "จากโครงสร้างพื้นฐานองค์กรไปจนถึงระบบสุขภาพ เราสร้างโซลูชันดิจิทัลที่เสริมพลังองค์กรให้เติบโตและสร้างนวัตกรรม",
   },
 
   // Product 1 - Clinic Website
@@ -110,42 +120,42 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "การวินิจฉัย · วิเคราะห์ไบโอมาร์กเกอร์ · วางแผนการรักษา · ข้อมูลเชิงลึกอายุยืน",
   },
 
-  // Product 5 - Business Management for Healthcare
-  "product.5.title": { en: "Healthcare Business Management", th: "การจัดการธุรกิจสุขภาพ" },
+  // Product 5 - Enterprise Business Management
+  "product.5.title": { en: "Enterprise Business Management", th: "ระบบจัดการธุรกิจองค์กร" },
   "product.5.subtitle": { en: "All in one Package", th: "แพ็คเกจครบวงจร" },
   "product.5.desc": {
-    en: "Comprehensive business management solutions for clinics and healthcare providers. Financial tracking, staff management, inventory control, and operational analytics to grow your practice.",
-    th: "โซลูชันการจัดการธุรกิจครบวงจรสำหรับคลินิกและผู้ให้บริการด้านสุขภาพ การติดตามการเงิน การจัดการพนักงาน การควบคุมสินค้าคงคลัง และการวิเคราะห์การดำเนินงานเพื่อขยายธุรกิจของคุณ",
+    en: "Comprehensive business management solutions for enterprises and organizations. Financial tracking, staff management, inventory control, and operational analytics to scale your business.",
+    th: "โซลูชันการจัดการธุรกิจครบวงจรสำหรับองค์กร การติดตามการเงิน การจัดการพนักงาน การควบคุมสินค้าคงคลัง และการวิเคราะห์การดำเนินงานเพื่อขยายธุรกิจของคุณ",
   },
   "product.5.tag1": { en: "Finance", th: "การเงิน" },
   "product.5.tag2": { en: "Operations", th: "ปฏิบัติการ" },
   "product.5.tag3": { en: "Growth", th: "เติบโต" },
   "product.5.usecase": {
-    en: "Clinic Operations · Revenue Management · Staff Scheduling · Business Analytics",
-    th: "การดำเนินงานคลินิก · การจัดการรายได้ · ตารางพนักงาน · การวิเคราะห์ธุรกิจ",
+    en: "Enterprise Operations · Revenue Management · Staff Scheduling · Business Analytics",
+    th: "การดำเนินงานองค์กร · การจัดการรายได้ · ตารางพนักงาน · การวิเคราะห์ธุรกิจ",
   },
 
   // Product 6 - AI Client Prediction
   "product.6.title": { en: "AI Client Prediction", th: "AI ทำนายลูกค้า" },
-  "product.6.subtitle": { en: "Smart Patient Insights", th: "ข้อมูลเชิงลึกผู้ป่วยอัจฉริยะ" },
+  "product.6.subtitle": { en: "Smart Business Insights", th: "ข้อมูลเชิงลึกธุรกิจอัจฉริยะ" },
   "product.6.desc": {
-    en: "AI-powered client prediction and retention analytics. Forecast patient visits, identify at-risk clients, optimize marketing campaigns, and maximize lifetime value.",
-    th: "การวิเคราะห์การทำนายและรักษาลูกค้าด้วย AI คาดการณ์การนัดพบ ระบุลูกค้าที่มีความเสี่ยง ปรับแต่งแคมเปญการตลาด และเพิ่มมูลค่าตลอดชีพ",
+    en: "AI-powered client prediction and retention analytics. Forecast customer behavior, identify at-risk clients, optimize marketing campaigns, and maximize lifetime value.",
+    th: "การวิเคราะห์การทำนายและรักษาลูกค้าด้วย AI คาดการณ์พฤติกรรมลูกค้า ระบุลูกค้าที่มีความเสี่ยง ปรับแต่งแคมเปญการตลาด และเพิ่มมูลค่าตลอดชีพ",
   },
   "product.6.tag1": { en: "AI", th: "AI" },
   "product.6.tag2": { en: "Retention", th: "รักษาลูกค้า" },
   "product.6.tag3": { en: "Marketing", th: "การตลาด" },
   "product.6.usecase": {
-    en: "Patient Retention · Visit Prediction · Churn Analysis · Campaign Optimization",
-    th: "รักษาผู้ป่วย · ทำนายการนัดพบ · วิเคราะห์การหลุด · ปรับแต่งแคมเปญ",
+    en: "Client Retention · Behavior Prediction · Churn Analysis · Campaign Optimization",
+    th: "รักษาลูกค้า · ทำนายพฤติกรรม · วิเคราะห์การหลุด · ปรับแต่งแคมเปญ",
   },
 
   // Product 7 - Financial Tracking Platform
   "product.7.title": { en: "Financial Tracking Platform", th: "แพลตฟอร์มติดตามการเงิน" },
   "product.7.subtitle": { en: "Revenue Intelligence", th: "ระบบอัจฉริยะด้านรายได้" },
   "product.7.desc": {
-    en: "Complete financial management for healthcare businesses. Real-time revenue tracking, expense management, profitability analysis, and automated financial reporting.",
-    th: "การจัดการการเงินครบวงจรสำหรับธุรกิจสุขภาพ ติดตามรายได้แบบเรียลไทม์ จัดการค่าใช้จ่าย วิเคราะห์กำไร และรายงานการเงินอัตโนมัติ",
+    en: "Complete financial management for enterprises. Real-time revenue tracking, expense management, profitability analysis, and automated financial reporting.",
+    th: "การจัดการการเงินครบวงจรสำหรับองค์กร ติดตามรายได้แบบเรียลไทม์ จัดการค่าใช้จ่าย วิเคราะห์กำไร และรายงานการเงินอัตโนมัติ",
   },
   "product.7.tag1": { en: "Revenue", th: "รายได้" },
   "product.7.tag2": { en: "Expenses", th: "ค่าใช้จ่าย" },
@@ -159,8 +169,8 @@ export const dict: Record<string, Record<Lang, string>> = {
   "product.8.title": { en: "Dashboard & Visualization", th: "แดชบอร์ดและการแสดงผล" },
   "product.8.subtitle": { en: "Data-Driven Decisions", th: "ตัดสินใจด้วยข้อมูล" },
   "product.8.desc": {
-    en: "Beautiful, real-time dashboards that transform your clinic data into actionable insights. KPI monitoring, trend analysis, and customizable reports for smarter decisions.",
-    th: "แดชบอร์ดสวยงามแบบเรียลไทม์ที่เปลี่ยนข้อมูลคลินิกเป็นข้อมูลเชิงลึกที่นำไปใช้ได้ ติดตาม KPI วิเคราะห์แนวโน้ม และรายงานที่ปรับแต่งได้เพื่อการตัดสินใจที่ชาญฉลาด",
+    en: "Beautiful, real-time dashboards that transform your business data into actionable insights. KPI monitoring, trend analysis, and customizable reports for smarter decisions.",
+    th: "แดชบอร์ดสวยงามแบบเรียลไทม์ที่เปลี่ยนข้อมูลธุรกิจเป็นข้อมูลเชิงลึกที่นำไปใช้ได้ ติดตาม KPI วิเคราะห์แนวโน้ม และรายงานที่ปรับแต่งได้เพื่อการตัดสินใจที่ชาญฉลาด",
   },
   "product.8.tag1": { en: "KPIs", th: "KPIs" },
   "product.8.tag2": { en: "Real-time", th: "เรียลไทม์" },
@@ -285,54 +295,62 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service4.ctaDesc": { en: "Let's explore how AI can transform your practice and extend patient healthspan.", th: "มาสำรวจว่า AI จะเปลี่ยนแปลงการปฏิบัติงานและขยายอายุขัยที่แข็งแรงของผู้ป่วยได้อย่างไร" },
 
   // ── Service Page 5: Healthcare Business ──
-  "service5.heroTitle": { en: "Healthcare Business Management", th: "การจัดการธุรกิจสุขภาพ" },
+  "service5.heroTitle": { en: "Enterprise Business Management", th: "ระบบจัดการธุรกิจองค์กร" },
   "service5.heroDesc": { 
-    en: "Comprehensive business management solutions for clinics and healthcare providers. Financial tracking, staff management, inventory control, and operational analytics to grow your practice.",
-    th: "โซลูชันการจัดการธุรกิจครบวงจรสำหรับคลินิกและผู้ให้บริการด้านสุขภาพ การติดตามการเงิน การจัดการพนักงาน การควบคุมสินค้าคงคลัง และการวิเคราะห์การดำเนินงานเพื่อขยายธุรกิจของคุณ"
+    en: "Comprehensive business management solutions for enterprises and organizations. Financial tracking, staff management, inventory control, and operational analytics to scale your business.",
+    th: "โซลูชันการจัดการธุรกิจครบวงจรสำหรับองค์กร การติดตามการเงิน การจัดการพนักงาน การควบคุมสินค้าคงคลัง และการวิเคราะห์การดำเนินงานเพื่อขยายธุรกิจของคุณ"
   },
-  "service5.sectionTitle": { en: "Run Your Practice Like a Business", th: "บริหารคลินิกอย่างมืออาชีพ" },
+  "service5.sectionTitle": { en: "Run Your Organization Like a Pro", th: "บริหารองค์กรอย่างมืออาชีพ" },
   "service5.sectionDesc": { 
-    en: "Our business management platform handles the operational complexity so you can focus on patient care and practice growth.",
-    th: "แพลตฟอร์มจัดการธุรกิจของเราจัดการความซับซ้อนในการดำเนินงานเพื่อให้คุณมุ่งเน้นการดูแลผู้ป่วยและการเติบโตของธุรกิจ"
+    en: "Our business management platform handles the operational complexity so you can focus on core business and enterprise growth.",
+    th: "แพลตฟอร์มจัดการธุรกิจของเราจัดการความซับซ้อนในการดำเนินงานเพื่อให้คุณมุ่งเน้นธุรกิจหลักและการเติบโตขององค์กร"
   },
   "service5.feature1.title": { en: "Financial Management", th: "การจัดการการเงิน" },
-  "service5.feature1.desc": { en: "Complete revenue tracking, billing automation, insurance claims management, and financial reporting for your practice.", th: "การติดตามรายได้ครบวงจร การออกบิลอัตโนมัติ การจัดการเคลมประกัน และการรายงานการเงินสำหรับคลินิกของคุณ" },
+  "service5.feature1.desc": { en: "Complete revenue tracking, billing automation, cost management, and financial reporting for your organization.", th: "การติดตามรายได้ครบวงจร การออกบิลอัตโนมัติ การจัดการต้นทุน และการรายงานการเงินสำหรับองค์กรของคุณ" },
   "service5.feature2.title": { en: "Staff Management", th: "การจัดการพนักงาน" },
   "service5.feature2.desc": { en: "Employee scheduling, payroll integration, performance tracking, and team communication tools.", th: "การจัดตารางพนักงาน การเชื่อมต่อเงินเดือน การติดตามประสิทธิภาพ และเครื่องมือสื่อสารในทีม" },
   "service5.feature3.title": { en: "Inventory Control", th: "การควบคุมสินค้าคงคลัง" },
-  "service5.feature3.desc": { en: "Medical supplies tracking, automated reordering, vendor management, and cost optimization.", th: "การติดตามเวชภัณฑ์ การสั่งซื้อใหม่อัตโนมัติ การจัดการผู้ขาย และการปรับปรุงต้นทุน" },
+  "service5.feature3.desc": { en: "Supplies tracking, automated reordering, vendor management, and cost optimization.", th: "การติดตามสินค้าคงคลัง การสั่งซื้อใหม่อัตโนมัติ การจัดการผู้ขาย และการปรับปรุงต้นทุน" },
   "service5.feature4.title": { en: "Business Analytics", th: "การวิเคราะห์ธุรกิจ" },
   "service5.feature4.desc": { en: "Real-time dashboards, KPI tracking, revenue forecasting, and operational insights to drive growth.", th: "แดชบอร์ดเรียลไทม์ การติดตาม KPI การพยากรณ์รายได้ และข้อมูลเชิงลึกด้านการดำเนินงานเพื่อขับเคลื่อนการเติบโต" },
-  "service5.ctaTitle": { en: "Ready to Streamline Your Practice Operations?", th: "พร้อมปรับปรุงการดำเนินงานของคลินิกหรือยัง?" },
-  "service5.ctaDesc": { en: "Let's build a business management system that helps your practice thrive.", th: "มาสร้างระบบจัดการธุรกิจที่ช่วยให้คลินิกของคุณเติบโต" },
+  "service5.ctaTitle": { en: "Ready to Streamline Your Enterprise Operations?", th: "พร้อมปรับปรุงการดำเนินงานขององค์กรหรือยัง?" },
+  "service5.ctaDesc": { en: "Let's build a business management system that helps your organization thrive.", th: "มาสร้างระบบจัดการธุรกิจที่ช่วยให้องค์กรของคุณเติบโต" },
+  "service5.perfectFor1": { en: "Enterprises", th: "องค์กร" },
+  "service5.perfectFor2": { en: "Growing Businesses", th: "ธุรกิจที่กำลังเติบโต" },
+  "service5.perfectFor3": { en: "Multi-site Organizations", th: "องค์กรหลายสาขา" },
+  "service5.perfectFor4": { en: "Startups & SMEs", th: "สตาร์ทอัพและ SMEs" },
 
   // ── Service Page 6: AI Client Prediction ──
   "service6.heroTitle": { en: "AI Client Prediction", th: "AI ทำนายลูกค้า" },
   "service6.heroDesc": { 
-    en: "AI-powered client prediction and retention analytics. Forecast patient visits, identify at-risk clients, optimize marketing campaigns, and maximize lifetime value.",
-    th: "การวิเคราะห์การทำนายและรักษาลูกค้าด้วย AI คาดการณ์การนัดพบ ระบุลูกค้าที่มีความเสี่ยง ปรับแต่งแคมเปญการตลาด และเพิ่มมูลค่าตลอดชีพ"
+    en: "AI-powered client prediction and retention analytics. Forecast customer behavior, identify at-risk clients, optimize marketing campaigns, and maximize lifetime value.",
+    th: "การวิเคราะห์การทำนายและรักษาลูกค้าด้วย AI คาดการณ์พฤติกรรมลูกค้า ระบุลูกค้าที่มีความเสี่ยง ปรับแต่งแคมเปญการตลาด และเพิ่มมูลค่าตลอดชีพ"
   },
   "service6.sectionTitle": { en: "Predict, Retain, Grow", th: "ทำนาย รักษา เติบโต" },
   "service6.sectionDesc": { 
-    en: "Use AI to understand your patients better and take proactive actions that drive retention and revenue.",
-    th: "ใช้ AI เพื่อเข้าใจผู้ป่วยของคุณดีขึ้นและดำเนินการเชิงรุกที่ขับเคลื่อนการรักษาลูกค้าและรายได้"
+    en: "Use AI to understand your clients better and take proactive actions that drive retention and revenue.",
+    th: "ใช้ AI เพื่อเข้าใจลูกค้าของคุณดีขึ้นและดำเนินการเชิงรุกที่ขับเคลื่อนการรักษาลูกค้าและรายได้"
   },
   "service6.feature1.title": { en: "Visit Prediction", th: "การทำนายการนัดพบ" },
-  "service6.feature1.desc": { en: "AI models predict when patients are likely to book their next appointment, enabling proactive outreach.", th: "โมเดล AI ทำนายว่าผู้ป่วยมีแนวโน้มจองนัดหมายครั้งต่อไปเมื่อใด ช่วยให้สามารถติดต่อเชิงรุกได้" },
+  "service6.feature1.desc": { en: "AI models predict when clients are likely to engage next, enabling proactive outreach.", th: "โมเดล AI ทำนายว่าลูกค้ามีแนวโน้มจะกลับมาเมื่อใด ช่วยให้สามารถติดต่อเชิงรุกได้" },
   "service6.feature2.title": { en: "Churn Analysis", th: "การวิเคราะห์การสูญเสียลูกค้า" },
-  "service6.feature2.desc": { en: "Identify at-risk patients before they leave and take action with automated retention campaigns.", th: "ระบุผู้ป่วยที่มีความเสี่ยงก่อนที่จะจากไปและดำเนินการด้วยแคมเปญรักษาลูกค้าอัตโนมัติ" },
+  "service6.feature2.desc": { en: "Identify at-risk clients before they leave and take action with automated retention campaigns.", th: "ระบุลูกค้าที่มีความเสี่ยงก่อนที่จะจากไปและดำเนินการด้วยแคมเปญรักษาลูกค้าอัตโนมัติ" },
   "service6.feature3.title": { en: "Campaign Optimization", th: "การปรับแต่งแคมเปญ" },
-  "service6.feature3.desc": { en: "AI-powered marketing recommendations to reach the right patients at the right time.", th: "คำแนะนำการตลาดด้วย AI เพื่อเข้าถึงผู้ป่วยที่เหมาะสมในเวลาที่เหมาะสม" },
+  "service6.feature3.desc": { en: "AI-powered marketing recommendations to reach the right clients at the right time.", th: "คำแนะนำการตลาดด้วย AI เพื่อเข้าถึงลูกค้าที่เหมาะสมในเวลาที่เหมาะสม" },
   "service6.feature4.title": { en: "Lifetime Value", th: "มูลค่าตลอดชีพ" },
-  "service6.feature4.desc": { en: "Calculate and maximize patient lifetime value with personalized engagement strategies.", th: "คำนวณและเพิ่มมูลค่าตลอดชีพของผู้ป่วยด้วยกลยุทธ์การมีส่วนร่วมเฉพาะบุคคล" },
-  "service6.ctaTitle": { en: "Ready to Predict and Retain More Patients?", th: "พร้อมทำนายและรักษาผู้ป่วยมากขึ้นหรือยัง?" },
-  "service6.ctaDesc": { en: "Let AI help you understand your patients and grow your practice.", th: "ให้ AI ช่วยคุณเข้าใจผู้ป่วยและขยายคลินิกของคุณ" },
+  "service6.feature4.desc": { en: "Calculate and maximize client lifetime value with personalized engagement strategies.", th: "คำนวณและเพิ่มมูลค่าตลอดชีพของลูกค้าด้วยกลยุทธ์การมีส่วนร่วมเฉพาะบุคคล" },
+  "service6.ctaTitle": { en: "Ready to Predict and Retain More Clients?", th: "พร้อมทำนายและรักษาลูกค้ามากขึ้นหรือยัง?" },
+  "service6.ctaDesc": { en: "Let AI help you understand your clients and grow your business.", th: "ให้ AI ช่วยคุณเข้าใจลูกค้าและขยายธุรกิจของคุณ" },
+  "service6.perfectFor1": { en: "Sales Teams", th: "ทีมขาย" },
+  "service6.perfectFor2": { en: "Marketing Teams", th: "ทีมการตลาด" },
+  "service6.perfectFor3": { en: "Business Development", th: "พัฒนาธุรกิจ" },
+  "service6.perfectFor4": { en: "Enterprise CRM", th: "CRM องค์กร" },
 
   // ── Service Page 7: Financial Tracking ──
   "service7.heroTitle": { en: "Financial Tracking Platform", th: "แพลตฟอร์มติดตามการเงิน" },
   "service7.heroDesc": { 
-    en: "Complete financial management for healthcare businesses. Real-time revenue tracking, expense management, profitability analysis, and automated financial reporting.",
-    th: "การจัดการการเงินครบวงจรสำหรับธุรกิจสุขภาพ ติดตามรายได้แบบเรียลไทม์ จัดการค่าใช้จ่าย วิเคราะห์กำไร และรายงานการเงินอัตโนมัติ"
+    en: "Complete financial management for enterprises. Real-time revenue tracking, expense management, profitability analysis, and automated financial reporting.",
+    th: "การจัดการการเงินครบวงจรสำหรับองค์กร ติดตามรายได้แบบเรียลไทม์ จัดการค่าใช้จ่าย วิเคราะห์กำไร และรายงานการเงินอัตโนมัติ"
   },
   "service7.sectionTitle": { en: "Complete Financial Visibility", th: "มองเห็นการเงินครบถ้วน" },
   "service7.sectionDesc": { 
@@ -348,13 +366,17 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service7.feature4.title": { en: "Financial Reports", th: "รายงานการเงิน" },
   "service7.feature4.desc": { en: "Automated financial statements, tax-ready reports, and customizable financial dashboards.", th: "งบการเงินอัตโนมัติ รายงานพร้อมภาษี และแดชบอร์ดการเงินที่ปรับแต่งได้" },
   "service7.ctaTitle": { en: "Ready to Take Control of Your Finances?", th: "พร้อมควบคุมการเงินของคุณหรือยัง?" },
-  "service7.ctaDesc": { en: "Get complete visibility into your practice's financial health.", th: "มองเห็นสุขภาพการเงินของคลินิกคุณอย่างครบถ้วน" },
+  "service7.ctaDesc": { en: "Get complete visibility into your organization's financial health.", th: "มองเห็นสุขภาพการเงินขององค์กรคุณอย่างครบถ้วน" },
+  "service7.perfectFor1": { en: "CFOs & Finance Teams", th: "CFO และทีมการเงิน" },
+  "service7.perfectFor2": { en: "Enterprise Accounting", th: "บัญชีองค์กร" },
+  "service7.perfectFor3": { en: "Growing Businesses", th: "ธุรกิจที่กำลังเติบโต" },
+  "service7.perfectFor4": { en: "Multi-site Organizations", th: "องค์กรหลายสาขา" },
 
   // ── Service Page 8: Dashboard Visualization ──
   "service8.heroTitle": { en: "Dashboard & Visualization", th: "แดชบอร์ดและการแสดงผล" },
   "service8.heroDesc": { 
-    en: "Beautiful, real-time dashboards that transform your clinic data into actionable insights. KPI monitoring, trend analysis, and customizable reports for smarter decisions.",
-    th: "แดชบอร์ดสวยงามแบบเรียลไทม์ที่เปลี่ยนข้อมูลคลินิกเป็นข้อมูลเชิงลึกที่นำไปใช้ได้ ติดตาม KPI วิเคราะห์แนวโน้ม และรายงานที่ปรับแต่งได้เพื่อการตัดสินใจที่ชาญฉลาด"
+    en: "Beautiful, real-time dashboards that transform your business data into actionable insights. KPI monitoring, trend analysis, and customizable reports for smarter decisions.",
+    th: "แดชบอร์ดสวยงามแบบเรียลไทม์ที่เปลี่ยนข้อมูลธุรกิจเป็นข้อมูลเชิงลึกที่นำไปใช้ได้ ติดตาม KPI วิเคราะห์แนวโน้ม และรายงานที่ปรับแต่งได้เพื่อการตัดสินใจที่ชาญฉลาด"
   },
   "service8.sectionTitle": { en: "See Your Data Come to Life", th: "ดูข้อมูลของคุณมีชีวิต" },
   "service8.sectionDesc": { 
@@ -376,13 +398,13 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service8.dashboardChip": { en: "Dashboard Types", th: "ประเภทแดชบอร์ด" },
   "service8.dashboardTitle": { en: "Dashboards for Every Need", th: "แดชบอร์ดสำหรับทุกความต้องการ" },
   "service8.dashboard1.title": { en: "Executive Overview", th: "ภาพรวมสำหรับผู้บริหาร" },
-  "service8.dashboard1.desc": { en: "High-level metrics for leadership: revenue, patient volume, growth rates, and key performance indicators.", th: "ตัวชี้วัดระดับสูงสำหรับผู้นำ: รายได้ จำนวนผู้ป่วย อัตราการเติบโต และตัวชี้วัดประสิทธิภาพหลัก" },
+  "service8.dashboard1.desc": { en: "High-level metrics for leadership: revenue, business volume, growth rates, and key performance indicators.", th: "ตัวชี้วัดระดับสูงสำหรับผู้นำ: รายได้ ปริมาณธุรกิจ อัตราการเติบโต และตัวชี้วัดประสิทธิภาพหลัก" },
   "service8.dashboard2.title": { en: "Operations Dashboard", th: "แดชบอร์ดการดำเนินงาน" },
-  "service8.dashboard2.desc": { en: "Daily operations tracking: appointments, wait times, staff utilization, and resource allocation.", th: "การติดตามการดำเนินงานประจำวัน: การนัดหมาย เวลารอ การใช้ประโยชน์พนักงาน และการจัดสรรทรัพยากร" },
+  "service8.dashboard2.desc": { en: "Daily operations tracking: tasks, workflows, staff utilization, and resource allocation.", th: "การติดตามการดำเนินงานประจำวัน: งาน เวิร์กโฟลว์ การใช้ประโยชน์พนักงาน และการจัดสรรทรัพยากร" },
   "service8.dashboard3.title": { en: "Financial Dashboard", th: "แดชบอร์ดการเงิน" },
   "service8.dashboard3.desc": { en: "Financial performance: revenue by service, expense tracking, profitability, and cash flow.", th: "ประสิทธิภาพทางการเงิน: รายได้ตามบริการ การติดตามค่าใช้จ่าย ความสามารถในการทำกำไร และกระแสเงินสด" },
-  "service8.dashboard4.title": { en: "Patient Analytics", th: "การวิเคราะห์ผู้ป่วย" },
-  "service8.dashboard4.desc": { en: "Patient insights: demographics, visit patterns, satisfaction scores, and retention metrics.", th: "ข้อมูลเชิงลึกผู้ป่วย: ข้อมูลประชากร รูปแบบการเข้ารับบริการ คะแนนความพึงพอใจ และตัวชี้วัดการรักษาลูกค้า" },
+  "service8.dashboard4.title": { en: "Client Analytics", th: "การวิเคราะห์ลูกค้า" },
+  "service8.dashboard4.desc": { en: "Client insights: demographics, engagement patterns, satisfaction scores, and retention metrics.", th: "ข้อมูลเชิงลึกลูกค้า: ข้อมูลประชากร รูปแบบการมีส่วนร่วม คะแนนความพึงพอใจ และตัวชี้วัดการรักษาลูกค้า" },
   "service8.capabilitiesChip": { en: "Platform Features", th: "คุณสมบัติแพลตฟอร์ม" },
   "service8.capabilitiesTitle": { en: "Powerful Visualization Tools", th: "เครื่องมือแสดงผลที่ทรงพลัง" },
   "service8.cap1": { en: "Real-time KPI dashboards", th: "แดชบอร์ด KPI แบบเรียลไทม์" },
@@ -396,9 +418,9 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service8.cap9": { en: "Mobile-friendly dashboards", th: "แดชบอร์ดที่รองรับมือถือ" },
   "service8.cap10": { en: "Data integration APIs", th: "API เชื่อมต่อข้อมูล" },
   "service8.idealFor": { en: "Ideal For", th: "เหมาะสำหรับ" },
-  "service8.ideal1": { en: "Clinic Managers", th: "ผู้จัดการคลินิก" },
-  "service8.ideal2": { en: "Practice Owners", th: "เจ้าของคลินิก" },
-  "service8.ideal3": { en: "Healthcare Executives", th: "ผู้บริหารด้านสุขภาพ" },
+  "service8.ideal1": { en: "Enterprise Managers", th: "ผู้จัดการองค์กร" },
+  "service8.ideal2": { en: "Business Owners", th: "เจ้าของธุรกิจ" },
+  "service8.ideal3": { en: "C-Level Executives", th: "ผู้บริหารระดับสูง" },
   "service8.ideal4": { en: "Operations Teams", th: "ทีมดำเนินงาน" },
   "service8.ideal5": { en: "Financial Analysts", th: "นักวิเคราะห์การเงิน" },
   "service8.ideal6": { en: "Multi-site Networks", th: "เครือข่ายหลายสาขา" },
@@ -441,7 +463,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "สร้างอนาคตของความยืนยาว",
   },
   "footer.services": { en: "Healthcare", th: "บริการสุขภาพ" },
-  "footer.business": { en: "Business", th: "ธุรกิจ" },
+  "footer.business": { en: "Enterprise", th: "องค์กร" },
   "footer.company": { en: "Company", th: "บริษัท" },
   "footer.legal": { en: "Legal", th: "กฎหมาย" },
   "footer.copyright": {

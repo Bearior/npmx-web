@@ -13,12 +13,12 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
-  title: "NPMx Technologies — Innovate. Build. Scale.",
+  title: "NPMx Technologies — สร้างสรรค์ พัฒนา ขยายธุรกิจ",
   description:
-    "NPMx Technologies delivers modern web development solutions — from static websites to large-scale enterprise systems.",
+    "NPMx Technologies สร้างโซลูชันดิจิทัลสำหรับองค์กร ตั้งแต่เว็บไซต์ไปจนถึงระบบระดับองค์กร พร้อม AI และโซลูชันสุขภาพ",
   openGraph: {
-    title: "NPMx Technologies — Innovate. Build. Scale.",
-    description: "Custom software, AI solutions, and scalable systems for modern businesses.",
+    title: "NPMx Technologies — สร้างสรรค์ พัฒนา ขยายธุรกิจ",
+    description: "ซอฟต์แวร์สั่งทำ โซลูชัน AI และระบบที่ขยายได้สำหรับธุรกิจยุคใหม่",
     url: "https://www.npmxtech.com/",
     siteName: "NPMx Technologies",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    locale: "en_US",
+    locale: "th_TH",
     type: "website",
   },
 };
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="th">
       <body className={`${inter.variable} ${sarabun.variable}`}>
         <LangProvider>
           <TopMenu />

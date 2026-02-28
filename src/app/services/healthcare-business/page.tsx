@@ -161,7 +161,7 @@ export default function HealthcareBusinessPage() {
             <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-primary mb-4">{t("service.perfectFor")}</h3>
               <div className="space-y-3">
-                {["service1.perfectFor1", "service1.perfectFor2", "service1.perfectFor4", "service1.perfectFor5"].map((itemKey) => (
+                {["service5.perfectFor1", "service5.perfectFor2", "service5.perfectFor3", "service5.perfectFor4"].map((itemKey) => (
                   <div key={itemKey} className="flex items-center gap-2 text-gray-700">
                     <div className="w-2 h-2 rounded-full bg-pink-500" />
                     {t(itemKey)}

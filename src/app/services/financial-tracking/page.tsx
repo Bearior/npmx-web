@@ -161,7 +161,7 @@ export default function FinancialTrackingPage() {
             <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-primary mb-4">{t("service.builtFor")}</h3>
               <div className="space-y-3">
-                {["service1.perfectFor1", "service1.perfectFor2", "service1.perfectFor3", "service1.perfectFor6"].map((itemKey) => (
+                {["service7.perfectFor1", "service7.perfectFor2", "service7.perfectFor3", "service7.perfectFor4"].map((itemKey) => (
                   <div key={itemKey} className="flex items-center gap-2 text-gray-700">
                     <div className="w-2 h-2 rounded-full bg-teal-500" />
                     {t(itemKey)}

@@ -56,7 +56,7 @@ const TEAM: TeamMember[] = [
     name: "Khunasin Suksri",
     role: "Chief Technology Officer",
     education: "Computer Engineering, Chulalongkorn University",
-    bio: "Specialized in full-stack development, building scalable healthcare platforms and systems.",
+    bio: "Specialized in full-stack development, building scalable health tech and enterprise solutions.",
     avatar: "K",
     image: "/images/m.png",
     color: "#3b82f6",

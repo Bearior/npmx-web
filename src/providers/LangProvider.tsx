@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { dict } from "./translations";
 
 export type Lang = "en" | "th";
@@ -20,9 +20,14 @@ export function useLang() {
 }
 
 export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("th");
 
   const toggleLang = () => setLang((prev) => (prev === "en" ? "th" : "en"));
+
+  // Sync html lang attribute with current language
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   const t = (key: string): string => {
     return dict[key]?.[lang] ?? key;

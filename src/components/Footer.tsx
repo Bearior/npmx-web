@@ -9,18 +9,18 @@ import { useLang } from "@/providers/LangProvider";
 export default function Footer() {
   const { t } = useLang();
 
-  const SERVICES = [
-    { label: t("product.1.title"), href: "/services/clinic-website" },
-    { label: t("product.2.title"), href: "/services/patient-platform" },
-    { label: t("product.3.title"), href: "/services/enterprise-medical" },
-    { label: t("product.4.title"), href: "/services/ai-precision-medicine" },
-  ];
-
-  const BUSINESS = [
+  const ENTERPRISE = [
     { label: t("product.5.title"), href: "/services/healthcare-business" },
     { label: t("product.6.title"), href: "/services/ai-client-prediction" },
     { label: t("product.7.title"), href: "/services/financial-tracking" },
     { label: t("product.8.title"), href: "/services/dashboard-visualization" },
+  ];
+
+  const HEALTHCARE = [
+    { label: t("product.1.title"), href: "/services/clinic-website" },
+    { label: t("product.2.title"), href: "/services/patient-platform" },
+    { label: t("product.3.title"), href: "/services/enterprise-medical" },
+    { label: t("product.4.title"), href: "/services/ai-precision-medicine" },
   ];
 
   const COMPANY = [
@@ -62,13 +62,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Healthcare Services */}
+          {/* Enterprise Services */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">
-              {t("footer.services")}
+              {t("footer.business")}
             </h4>
             <ul className="space-y-2">
-              {SERVICES.map((item) => (
+              {ENTERPRISE.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -81,17 +81,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Business Operations */}
+          {/* Healthcare Services */}
           <div>
-            <div className="flex items-center gap-4 my-8 w-full">
-              <div className="flex-1 h-px bg-gray-200" />
-              <h4 className="font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">
-                {t("footer.business")}
-              </h4>
-              <div className="flex-1 h-px bg-gray-200" />
-            </div>
+            <h4 className="font-semibold text-sm uppercase tracking-widest text-gray-400 mb-4">
+              {t("footer.services")}
+            </h4>
             <ul className="space-y-2">
-              {BUSINESS.map((item) => (
+              {HEALTHCARE.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

@@ -74,7 +74,7 @@ const BUSINESS_PRODUCTS = [
     tagKeys: ["product.5.tag1", "product.5.tag2", "product.5.tag3"],
     usecaseKey: "product.5.usecase",
     color: "#ec4899",
-    goals: ["Financial tracking", "Staff management", "Inventory control", "Business growth"],
+    goals: ["Financial tracking", "Staff management", "Inventory control", "Enterprise growth"],
     href: "/services/healthcare-business",
   },
   {
@@ -85,7 +85,7 @@ const BUSINESS_PRODUCTS = [
     tagKeys: ["product.6.tag1", "product.6.tag2", "product.6.tag3"],
     usecaseKey: "product.6.usecase",
     color: "#6366f1",
-    goals: ["Predict patient visits", "Reduce churn", "Optimize campaigns", "Increase retention"],
+    goals: ["Predict client behavior", "Reduce churn", "Optimize campaigns", "Increase retention"],
     href: "/services/ai-client-prediction",
   },
   {
@@ -155,11 +155,125 @@ export default function ProductSection() {
           </p>
         </div>
 
-        {/* Healthcare Solutions Divider */}
+        {/* Enterprise Solutions Divider */}
         <div className="flex items-center gap-4 mb-12 w-full">
           <div className="flex-1 h-px bg-gray-200" />
           <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">
-            Healthcare Solutions
+            {t("productSection.enterpriseDivider")}
+          </span>
+          <div className="flex-1 h-px bg-gray-200" />
+        </div>
+
+        {/* Business / Enterprise Products */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {BUSINESS_PRODUCTS.map((product, i) => (
+            <Card
+              key={i}
+              elevation={0}
+              sx={{
+                borderRadius: 4,
+                border: "1px solid #e5e7eb",
+                transition: "all 0.4s cubic-bezier(.4,0,.2,1)",
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(40px)",
+                transitionDelay: `${i * 150}ms`,
+                display: "flex",
+                flexDirection: "column",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                  boxShadow: `0 24px 48px ${product.color}18`,
+                  borderColor: product.color,
+                },
+              }}
+            >
+              <CardContent sx={{ p: 4, flex: 1, display: "flex", flexDirection: "column" }}>
+                {/* Icon + badge */}
+                <div className="flex items-center gap-3 mb-5">
+                  <div
+                    className="inline-flex items-center justify-center w-16 h-16 rounded-2xl"
+                    style={{
+                      backgroundColor: `${product.color}12`,
+                      color: product.color,
+                    }}
+                  >
+                    {product.icon}
+                  </div>
+                  <Chip
+                    label={t(product.subtitleKey)}
+                    size="small"
+                    sx={{
+                      fontSize: "0.7rem",
+                      fontWeight: 700,
+                      bgcolor: `${product.color}10`,
+                      color: product.color,
+                    }}
+                  />
+                </div>
+
+                <h3 className="text-2xl font-bold text-primary mb-2">
+                  {t(product.titleKey)}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                  {t(product.descKey)}
+                </p>
+
+                {/* Goals checklist */}
+                <div className="space-y-2 mb-5">
+                  {product.goals.map((goal) => (
+                    <div key={goal} className="flex items-center gap-2">
+                      <CheckCircleOutlineIcon
+                        sx={{ fontSize: 18, color: product.color }}
+                      />
+                      <span className="text-gray-600 text-sm">{goal}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-5 mt-auto">
+                  {product.tagKeys.map((tagKey) => (
+                    <Chip
+                      key={tagKey}
+                      label={t(tagKey)}
+                      size="small"
+                      sx={{
+                        fontSize: "0.7rem",
+                        fontWeight: 600,
+                        bgcolor: `${product.color}10`,
+                        color: product.color,
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Use cases */}
+                <p className="text-xs text-gray-400 italic mb-4">
+                  {t(product.usecaseKey)}
+                </p>
+
+                <Button
+                  href={product.href}
+                  endIcon={<ArrowForwardIcon />}
+                  sx={{
+                    textTransform: "none",
+                    fontWeight: 600,
+                    color: product.color,
+                    p: 0,
+                    "&:hover": { bgcolor: "transparent", opacity: 0.8 },
+                  }}
+                >
+                  {t("product.learnMore")}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Health Tech Divider */}
+        <div className="flex items-center gap-4 my-16 w-full">
+          <div className="flex-1 h-px bg-gray-200" />
+          <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">
+            {t("productSection.healthTechDivider")}
           </span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
@@ -287,120 +401,6 @@ export default function ProductSection() {
                     {t("product.learnMore")}
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Divider */}
-        <div className="flex items-center gap-4 my-16 w-full">
-          <div className="flex-1 h-px bg-gray-200" />
-          <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">
-            Business Operations
-          </span>
-          <div className="flex-1 h-px bg-gray-200" />
-        </div>
-
-        {/* Business Products */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {BUSINESS_PRODUCTS.map((product, i) => (
-            <Card
-              key={i}
-              elevation={0}
-              sx={{
-                borderRadius: 4,
-                border: "1px solid #e5e7eb",
-                transition: "all 0.4s cubic-bezier(.4,0,.2,1)",
-                opacity: visible ? 1 : 0,
-                transform: visible ? "translateY(0)" : "translateY(40px)",
-                transitionDelay: `${i * 150}ms`,
-                display: "flex",
-                flexDirection: "column",
-                "&:hover": {
-                  transform: "translateY(-8px)",
-                  boxShadow: `0 24px 48px ${product.color}18`,
-                  borderColor: product.color,
-                },
-              }}
-            >
-              <CardContent sx={{ p: 4, flex: 1, display: "flex", flexDirection: "column" }}>
-                {/* Icon + badge */}
-                <div className="flex items-center gap-3 mb-5">
-                  <div
-                    className="inline-flex items-center justify-center w-16 h-16 rounded-2xl"
-                    style={{
-                      backgroundColor: `${product.color}12`,
-                      color: product.color,
-                    }}
-                  >
-                    {product.icon}
-                  </div>
-                  <Chip
-                    label={t(product.subtitleKey)}
-                    size="small"
-                    sx={{
-                      fontSize: "0.7rem",
-                      fontWeight: 700,
-                      bgcolor: `${product.color}10`,
-                      color: product.color,
-                    }}
-                  />
-                </div>
-
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  {t(product.titleKey)}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  {t(product.descKey)}
-                </p>
-
-                {/* Goals checklist */}
-                <div className="space-y-2 mb-5">
-                  {product.goals.map((goal) => (
-                    <div key={goal} className="flex items-center gap-2">
-                      <CheckCircleOutlineIcon
-                        sx={{ fontSize: 18, color: product.color }}
-                      />
-                      <span className="text-gray-600 text-sm">{goal}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-5 mt-auto">
-                  {product.tagKeys.map((tagKey) => (
-                    <Chip
-                      key={tagKey}
-                      label={t(tagKey)}
-                      size="small"
-                      sx={{
-                        fontSize: "0.7rem",
-                        fontWeight: 600,
-                        bgcolor: `${product.color}10`,
-                        color: product.color,
-                      }}
-                    />
-                  ))}
-                </div>
-
-                {/* Use cases */}
-                <p className="text-xs text-gray-400 italic mb-4">
-                  {t(product.usecaseKey)}
-                </p>
-
-                <Button
-                  href={product.href}
-                  endIcon={<ArrowForwardIcon />}
-                  sx={{
-                    textTransform: "none",
-                    fontWeight: 600,
-                    color: product.color,
-                    p: 0,
-                    "&:hover": { bgcolor: "transparent", opacity: 0.8 },
-                  }}
-                >
-                  {t("product.learnMore")}
-                </Button>
               </CardContent>
             </Card>
           ))}
