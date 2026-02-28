@@ -4,16 +4,16 @@ import type { Lang } from "./LangProvider";
    All translations live here
    ────────────────────────────────────────────── */
 export const dict: Record<string, Record<Lang, string>> = {
-    // Product Section Dividers (for SEO)
+    // Product Section Dividers (for SEO) pass
     "productSection.healthTechDivider": {
       en: "Healthcare Solutions",
-      th: "โซลูชันสุขภาพ"
+      th: "นวัตกรรมเพื่อการดูแลสุขภาพ"
     },
     "productSection.enterpriseDivider": {
-      en: "Pro Enterprise Solutions",
-      th: "โซลูชันองค์กร"
+      en: "Enterprise Solutions",
+      th: "นวัตกรรมเพื่อองค์กร"
     },
-  // ── Navbar ──
+  // ── Navbar ── pass
   "nav.home": { en: "Home", th: "หน้าแรก" },
   "nav.about": { en: "About", th: "เกี่ยวกับเรา" },
   "nav.services": { en: "Services", th: "บริการ" },
@@ -21,11 +21,11 @@ export const dict: Record<string, Record<Lang, string>> = {
   "nav.contact": { en: "Contact", th: "ติดต่อเรา" },
   "nav.getInTouch": { en: "Get in Touch", th: "ติดต่อเรา" },
 
-  // ── Hero / Banner ──
+  // ── Hero / Banner ── pass
   "hero.tag": { en: "NPMx Technologies", th: "NPMx Technologies" },
-  "hero.h1.1": { en: "Longevity Powered by Technology.", th: "อายุยืนยาวด้วยเทคโนโลยี" },
-  "hero.h1.2": { en: "Enterprise Solutions. Digital Future.", th: "โซลูชันองค์กร อนาคตดิจิทัล" },
-  "hero.h1.3": { en: "Extend Healthspan. Empower Care.", th: "ขยายสุขภาพ เสริมพลังการดูแล" },
+  "hero.h1.1": { en: "Longevity Powered by Technology.", th: "นวัตกรรมเพื่อชีวิตที่ยืนยาว" },
+  "hero.h1.2": { en: "Enterprise Solutions. Digital Future.", th: "ยกระดับองค์กร สู่อนาคตแห่งโลกดิจิทัล" },
+  "hero.h1.3": { en: "Extend Healthspan. Empower Care.", th: "ต่อยอดสุขภาพที่ยั่งยืน เสริมประสิทธิภาพการฟื้นฟูและการรักษา" },
   "hero.sub": {
     en: "We build digital infrastructure and on-demand solutions for enterprises—empowering organizations in health tech, medical, and beyond. From intelligent platforms to enterprise systems, we help you grow and innovate in the digital era.",
     th: "เราสร้างโครงสร้างพื้นฐานดิจิทัลและโซลูชันสำหรับองค์กรตามความต้องการ เสริมพลังธุรกิจในด้านเฮลท์เทค การแพทย์ และอื่น ๆ ตั้งแต่แพลตฟอร์มอัจฉริยะไปจนถึงระบบระดับองค์กร เพื่อการเติบโตและนวัตกรรมในยุคดิจิทัล",
@@ -33,10 +33,10 @@ export const dict: Record<string, Record<Lang, string>> = {
   "hero.cta1": { en: "Explore Services", th: "ดูบริการของเรา" },
   "hero.cta2": { en: "Learn More", th: "เรียนรู้เพิ่มเติม" },
 
-  // ── About ──
+  // ── About ── pass
   "about.chip": { en: "About Us", th: "เกี่ยวกับเรา" },
-  "about.title1": { en: "Building the Future of", th: "สร้างอนาคตของ" },
-  "about.titleAccent": { en: "Enterprise Solutions", th: "โซลูชันองค์กร" },
+  "about.title1": { en: "Building the Future of", th: "สร้างสรรค์อนาคตแห่ง" },
+  "about.titleAccent": { en: "Enterprise Solutions", th: "โนวัตกรรมเพื่อองค์กร" },
   "about.titleHealthTech": { en: "Health Tech", th: "เฮลท์เทค" },
   "about.p1": {
     en: "NPMx Solution is a technology company building digital infrastructure for enterprises on demand. Our solutions span health tech, medical, business, and more—empowering organizations with secure, innovative, and scalable systems.",
@@ -46,12 +46,12 @@ export const dict: Record<string, Record<Lang, string>> = {
     en: "Our vision: to be the leading provider of on-demand digital infrastructure for enterprises, enabling innovation across industries. We deliver solutions for health tech, medical, and beyond—empowering organizations to thrive in a digital world.",
     th: "วิสัยทัศน์ของเรา: เป็นผู้นำด้านโครงสร้างพื้นฐานดิจิทัลสำหรับองค์กรตามความต้องการ ขับเคลื่อนนวัตกรรมในทุกอุตสาหกรรม เราส่งมอบโซลูชันสำหรับ health tech การแพทย์ และอื่น ๆ — เสริมพลังองค์กรให้เติบโตในโลกดิจิทัล",
   },
-  "about.stat1": { en: "Projects Delivered", th: "โปรเจกต์สำเร็จ" },
+  "about.stat1": { en: "Projects Delivered", th: "โปรเจกต์ที่เคยพัฒนา" },
   "about.stat2": { en: "Team Members", th: "สมาชิกในทีม" },
   "about.stat3": { en: "Happy Clients", th: "ลูกค้าที่พึงพอใจ" },
   "about.stat4": { en: "Years Experience", th: "ปีประสบการณ์" },
 
-  // ── Services / Products ──
+  // ── Services / Products ── pass
   "services.chip": { en: "What We Build", th: "สิ่งที่เราสร้าง" },
   "services.title1": { en: "Enterprise Solutions That", th: "โซลูชันองค์กรที่" },
   "services.titleAccent": { en: "Transform Business", th: "เปลี่ยนแปลงธุรกิจ" },
@@ -60,7 +60,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "จากโครงสร้างพื้นฐานองค์กรไปจนถึงระบบสุขภาพ เราสร้างโซลูชันดิจิทัลที่เสริมพลังองค์กรให้เติบโตและสร้างนวัตกรรม",
   },
 
-  // Product 1 - Clinic Website
+  // Product 1 - Clinic Website pass
   "product.1.title": { en: "Clinic & Wellness Website", th: "เว็บไซต์คลินิกและเวลเนส" },
   "product.1.subtitle": { en: "Professional Presence", th: "ภาพลักษณ์มืออาชีพ" },
   "product.1.desc": {
@@ -75,7 +75,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "คลินิก · ศูนย์เวลเนส · สถานปฏิบัติการอายุรกรรม · เมดิคัลสปา",
   },
 
-  // Product 2 - Patient Platform
+  // Product 2 - Patient Platform pass
   "product.2.title": { en: "Patient Management Platform", th: "แพลตฟอร์มจัดการผู้ป่วย" },
   "product.2.subtitle": { en: "Smart Healthcare", th: "ระบบปฏิบัติการสุขภาพอัจฉริยะ" },
   "product.2.desc": {
@@ -90,7 +90,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "ระบบ EMR · จองนัดหมาย · ติดตามสุขภาพ · แดชบอร์ดทางคลินิก",
   },
 
-  // Product 3 - Enterprise Hospital
+  // Product 3 - Enterprise Hospital pass
   "product.3.title": { en: "Enterprise Medical System", th: "ระบบการแพทย์ระดับองค์กร" },
   "product.3.subtitle": { en: "Hospital Infrastructure", th: "โครงสร้างพื้นฐานระดับโรงพยาบาล" },
   "product.3.desc": {
@@ -105,8 +105,8 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "โรงพยาบาล · เครือข่ายคลินิก · กลุ่มสุขภาพ · การแพทย์แม่นยำ",
   },
 
-  // Product 4 - AI for Precision Medicine
-  "product.4.title": { en: "AI for Precision Medicine", th: "AI สำหรับการแพทย์แม่นยำ" },
+  // Product 4 - AI for Precision Medicine pass
+  "product.4.title": { en: "AI for Precision Medicine", th: "AI สำหรับการแพทย์" },
   "product.4.subtitle": { en: "Intelligent Health Insights", th: "ข้อมูลเชิงลึกด้านสุขภาพอัจฉริยะ" },
   "product.4.desc": {
     en: "AI-powered solutions for diagnostics, predictive health analytics, personalized treatment recommendations, and longevity biomarker analysis. Harness machine learning to extend healthspan.",
@@ -120,7 +120,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "การวินิจฉัย · วิเคราะห์ไบโอมาร์กเกอร์ · วางแผนการรักษา · ข้อมูลเชิงลึกอายุยืน",
   },
 
-  // Product 5 - Enterprise Business Management
+  // Product 5 - Enterprise Business Management pass
   "product.5.title": { en: "Enterprise Business Management", th: "ระบบจัดการธุรกิจองค์กร" },
   "product.5.subtitle": { en: "All in one Package", th: "แพ็คเกจครบวงจร" },
   "product.5.desc": {
@@ -135,7 +135,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "การดำเนินงานองค์กร · การจัดการรายได้ · ตารางพนักงาน · การวิเคราะห์ธุรกิจ",
   },
 
-  // Product 6 - AI Client Prediction
+  // Product 6 - AI Client Prediction pass
   "product.6.title": { en: "AI Client Prediction", th: "AI ทำนายลูกค้า" },
   "product.6.subtitle": { en: "Smart Business Insights", th: "ข้อมูลเชิงลึกธุรกิจอัจฉริยะ" },
   "product.6.desc": {
@@ -150,7 +150,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "รักษาลูกค้า · ทำนายพฤติกรรม · วิเคราะห์การหลุด · ปรับแต่งแคมเปญ",
   },
 
-  // Product 7 - Financial Tracking Platform
+  // Product 7 - Financial Tracking Platform pass
   "product.7.title": { en: "Financial Tracking Platform", th: "แพลตฟอร์มติดตามการเงิน" },
   "product.7.subtitle": { en: "Revenue Intelligence", th: "ระบบอัจฉริยะด้านรายได้" },
   "product.7.desc": {
@@ -165,7 +165,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "ติดตามรายได้ · จัดการค่าใช้จ่าย · วิเคราะห์กำไร · รายงานการเงิน",
   },
 
-  // Product 8 - Dashboard Visualization
+  // Product 8 - Dashboard Visualization pass
   "product.8.title": { en: "Dashboard & Visualization", th: "แดชบอร์ดและการแสดงผล" },
   "product.8.subtitle": { en: "Data-Driven Decisions", th: "ตัดสินใจด้วยข้อมูล" },
   "product.8.desc": {
@@ -183,7 +183,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   "product.learnMore": { en: "Learn More", th: "เรียนรู้เพิ่มเติม" },
   "product.viewDemo": { en: "Demo", th: "ดูตัวอย่าง" },
 
-  // ── Service Pages Common ──
+  // ── Service Pages Common ── pass
   "service.backToServices": { en: "Back to Services", th: "บริการ" },
   "service.getStarted": { en: "Get Started", th: "เริ่มต้นใช้งาน" },
   "service.contactUs": { en: "Contact Us", th: "ติดต่อเรา" },
@@ -191,7 +191,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service.builtFor": { en: "Built For", th: "สร้างมาเพื่อ" },
   "service.idealFor": { en: "Ideal For", th: "เหมาะสำหรับ" },
 
-  // ── Service Page 1: Clinic Website ──
+  // ── Service Page 1: Clinic Website ──. pass
   "service1.heroTitle": { en: "Clinic & Wellness Website", th: "เว็บไซต์คลินิกและเวลเนส" },
   "service1.heroDesc": { 
     en: "Beautiful, fast, and SEO-optimized websites for clinics, wellness centers, and longevity practices. Build trust with patients through a modern digital presence.",
@@ -226,7 +226,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   "service1.perfectFor5": { en: "Dental Offices", th: "คลินิกทันตกรรม" },
   "service1.perfectFor6": { en: "Specialty Practices", th: "คลินิกเฉพาะทาง" },
 
-  // ── Service Page 2: Patient Platform ──
+  // ── Service Page 2: Patient Platform ── pass
   "service2.heroTitle": { en: "Patient Management Platform", th: "แพลตฟอร์มจัดการผู้ป่วย" },
   "service2.heroDesc": { 
     en: "Intelligent platforms for appointment booking, patient records, health tracking, and clinical dashboards. Designed for modern healthcare workflows.",
