@@ -50,11 +50,11 @@ export default function Banner() {
           {t("hero.tag")}
         </p>
         <h1
-          className={`text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-6 transition-all duration-500 ${fadeCls}`}
+          className={`text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-snug sm:leading-snug md:leading-snug mb-6 transition-all duration-500 ${fadeCls}`}
         >
           {t(HEADLINE_KEYS[headlineIdx])}
         </h1>
-        <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 animate-fade-in [animation-delay:0.3s]">
+        <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in [animation-delay:0.3s]">
           {t("hero.sub")}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in [animation-delay:0.6s]">

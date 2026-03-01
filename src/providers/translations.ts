@@ -9,6 +9,7 @@ export const dict: Record<string, Record<Lang, string>> = {
       en: "Healthcare Solutions",
       th: "นวัตกรรมเพื่อการดูแลสุขภาพ"
     },
+    
     "productSection.enterpriseDivider": {
       en: "Enterprise Solutions",
       th: "นวัตกรรมเพื่อองค์กร"
@@ -23,9 +24,9 @@ export const dict: Record<string, Record<Lang, string>> = {
 
   // ── Hero / Banner ── pass
   "hero.tag": { en: "NPMx Technologies", th: "NPMx Technologies" },
-  "hero.h1.1": { en: "Longevity Powered by Technology.", th: "นวัตกรรมเพื่อชีวิตที่ยืนยาว" },
+  "hero.h1.1": { en: "Driving Business Through Technology.", th: "ขับเคลื่อนธุรกิจด้วยเทคโนโลยียุคใหม่" },
   "hero.h1.2": { en: "Enterprise Solutions. Digital Future.", th: "ยกระดับองค์กร สู่อนาคตแห่งโลกดิจิทัล" },
-  "hero.h1.3": { en: "Extend Healthspan. Empower Care.", th: "ต่อยอดสุขภาพที่ยั่งยืน เสริมประสิทธิภาพการฟื้นฟูและการรักษา" },
+  "hero.h1.3": { en: "Innovate. Scale. Transform.", th: "สร้างนวัตกรรม ขยายศักยภาพ พลิกโฉมธุรกิจ" },
   "hero.sub": {
     en: "We build digital infrastructure and on-demand solutions for enterprises—empowering organizations in health tech, medical, and beyond. From intelligent platforms to enterprise systems, we help you grow and innovate in the digital era.",
     th: "เราสร้างโครงสร้างพื้นฐานดิจิทัลและโซลูชันสำหรับองค์กรตามความต้องการ เสริมพลังธุรกิจในด้านเฮลท์เทค การแพทย์ และอื่น ๆ ตั้งแต่แพลตฟอร์มอัจฉริยะไปจนถึงระบบระดับองค์กร เพื่อการเติบโตและนวัตกรรมในยุคดิจิทัล",
@@ -36,7 +37,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   // ── About ── pass
   "about.chip": { en: "About Us", th: "เกี่ยวกับเรา" },
   "about.title1": { en: "Building the Future of", th: "สร้างสรรค์อนาคตแห่ง" },
-  "about.titleAccent": { en: "Enterprise Solutions", th: "โนวัตกรรมเพื่อองค์กร" },
+  "about.titleAccent": { en: "Enterprise Solutions", th: "นวัตกรรมเพื่อองค์กร" },
   "about.titleHealthTech": { en: "Health Tech", th: "เฮลท์เทค" },
   "about.p1": {
     en: "NPMx Solution is a technology company building digital infrastructure for enterprises on demand. Our solutions span health tech, medical, business, and more—empowering organizations with secure, innovative, and scalable systems.",

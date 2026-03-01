@@ -60,7 +60,7 @@ export default function AboutSection() {
                 mb: 2,
               }}
             />
-            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-snug md:leading-snug sm:leading-snug">
               {t("about.title1")}{" "}
               <span className="text-accent">{t("about.titleAccent")}</span>
             </h2>
