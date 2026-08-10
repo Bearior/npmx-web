@@ -20,7 +20,12 @@ html {
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* `clip`, not `hidden`. Per spec, `overflow-x: hidden` forces overflow-y to
+     compute to `auto`, which turns body into a scroll container and silently
+     breaks `position: sticky` for every descendant (the configurator's canvas
+     and price rail). `clip` still prevents horizontal scroll but creates no
+     scroll container, so sticky keeps working. */
+  overflow-x: clip;
 }
 
 body {

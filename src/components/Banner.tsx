@@ -60,7 +60,7 @@ export default function Banner() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in [animation-delay:0.6s]">
           <Button
             variant="contained"
-            href="#products"
+            href="/build"
             size="large"
             sx={{
               bgcolor: "#3b82f6",
@@ -73,7 +73,7 @@ export default function Banner() {
               "&:hover": { bgcolor: "#2563eb" },
             }}
           >
-            {t("hero.cta1")}
+            {t("hero.ctaBuild")}
           </Button>
           <Button
             variant="outlined"

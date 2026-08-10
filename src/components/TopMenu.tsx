@@ -12,11 +12,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import TranslateIcon from "@mui/icons-material/Translate";
 import { useLang } from "@/providers/LangProvider";
 
+/* Root-relative, not bare anchors: `#about` resolves against the current route,
+   so on /services/* and /build the nav went nowhere. */
 const NAV_KEYS = [
-  { key: "nav.home", href: "#hero" },
-  { key: "nav.about", href: "#about" },
-  { key: "nav.services", href: "#products" },
-  { key: "nav.team", href: "#team" },
+  { key: "nav.home", href: "/#hero" },
+  { key: "nav.about", href: "/#about" },
+  { key: "nav.services", href: "/#products" },
+  { key: "nav.team", href: "/#team" },
+  { key: "nav.build", href: "/build", highlight: true },
 ];
 
 export default function TopMenu() {
@@ -46,6 +49,11 @@ export default function TopMenu() {
     ? "border-gray-300 text-gray-600"
     : "border-white/30 text-white/80";
 
+  // The configurator is the primary call to action, so it reads as a pill rather than a link.
+  const buildPillCls = scrolled
+    ? "border-accent/50 bg-accent/10 text-accent hover:bg-accent/20"
+    : "border-white/40 bg-white/10 text-white hover:bg-white/20";
+
   return (
     <>
       <nav
@@ -61,15 +69,25 @@ export default function TopMenu() {
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            {NAV_KEYS.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className={`relative text-sm font-medium transition-colors hover:text-accent after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full ${linkCls}`}
-              >
-                {t(link.key)}
-              </Link>
-            ))}
+            {NAV_KEYS.map((link) =>
+              link.highlight ? (
+                <Link
+                  key={link.key}
+                  href={link.href}
+                  className={`rounded-full border px-4 py-1.5 text-sm font-bold transition-all ${buildPillCls}`}
+                >
+                  {t(link.key)}
+                </Link>
+              ) : (
+                <Link
+                  key={link.key}
+                  href={link.href}
+                  className={`relative text-sm font-medium transition-colors hover:text-accent after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full ${linkCls}`}
+                >
+                  {t(link.key)}
+                </Link>
+              )
+            )}
 
             <button
               onClick={toggleLang}
@@ -80,7 +98,7 @@ export default function TopMenu() {
             </button>
 
             <Link
-              href="#contact"
+              href="/#contact"
               className="ml-2 px-5 py-2 rounded-full bg-accent text-white text-sm font-semibold hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
             >
               {t("nav.getInTouch")}

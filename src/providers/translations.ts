@@ -19,6 +19,7 @@ export const dict: Record<string, Record<Lang, string>> = {
   "nav.about": { en: "About", th: "เกี่ยวกับเรา" },
   "nav.services": { en: "Services", th: "บริการ" },
   "nav.team": { en: "Team", th: "ทีมงาน" },
+  "nav.build": { en: "Build your LMS", th: "สร้างระบบเอง" },
   "nav.contact": { en: "Contact", th: "ติดต่อเรา" },
   "nav.getInTouch": { en: "Get in Touch", th: "ติดต่อเรา" },
 
@@ -32,6 +33,7 @@ export const dict: Record<string, Record<Lang, string>> = {
     th: "เราสร้างโครงสร้างพื้นฐานดิจิทัลและโซลูชันสำหรับองค์กรตามความต้องการ เสริมพลังธุรกิจในด้านเฮลท์เทค การแพทย์ และอื่น ๆ ตั้งแต่แพลตฟอร์มอัจฉริยะไปจนถึงระบบระดับองค์กร เพื่อการเติบโตและนวัตกรรมในยุคดิจิทัล",
   },
   "hero.cta1": { en: "Explore Services", th: "ดูบริการของเรา" },
+  "hero.ctaBuild": { en: "Build your LMS", th: "สร้างระบบของคุณเอง" },
   "hero.cta2": { en: "Learn More", th: "เรียนรู้เพิ่มเติม" },
 
   // ── About ── pass
@@ -484,4 +486,83 @@ export const dict: Record<string, Record<Lang, string>> = {
   },
   "cookie.accept": { en: "Accept", th: "ยอมรับ" },
   "cookie.decline": { en: "Decline", th: "ปฏิเสธ" },
+
+  // ── Home-page spotlight for /build ──
+  "homeBuild.badge": { en: "New · Custom LMS", th: "ใหม่ · Custom LMS" },
+  "homeBuild.desc": {
+    en: "An LMS for tutoring centres and private schools, under your own brand. Pick only the features you need and watch the price build up as you go — no sales call required.",
+    th: "ระบบ LMS สำหรับโรงเรียนกวดวิชาและโรงเรียนเอกชน ในแบรนด์ของคุณเอง เลือกเฉพาะฟีเจอร์ที่ต้องใช้ และเห็นราคาเพิ่มขึ้นตามที่เลือก โดยไม่ต้องรอติดต่อฝ่ายขาย",
+  },
+  "homeBuild.b1": {
+    en: "Drag in the features you actually need",
+    th: "ลากเลือกเฉพาะฟีเจอร์ที่คุณต้องใช้จริง",
+  },
+  "homeBuild.b2": {
+    en: "Anything they depend on is added for you automatically",
+    th: "สิ่งที่ต้องใช้ร่วมกันจะถูกเพิ่มให้อัตโนมัติ",
+  },
+  "homeBuild.b3": {
+    en: "See setup and monthly cost instantly — no waiting for a quote",
+    th: "เห็นค่าติดตั้งและค่ารายเดือนทันที ไม่ต้องรอใบเสนอราคา",
+  },
+  "homeBuild.cta": { en: "Start building", th: "เริ่มสร้างระบบ" },
+  "homeBuild.startingAt": { en: "Starting at", th: "เริ่มต้นที่" },
+
+  // ── LMS configurator (/build) ──
+  // Chrome only. Module names and descriptions live in src/lib/configurator/catalog.ts,
+  // co-located with their price and dependencies — see the design spec §10.
+  "build.chip": { en: "Build your own", th: "ออกแบบระบบเอง" },
+  "build.title": { en: "Build your own LMS", th: "สร้างระบบ LMS ของคุณเอง" },
+  "build.subtitle": {
+    en: "Drag the modules you need onto the canvas. Anything they depend on comes along automatically, and the price updates as you build.",
+    th: "ลากโมดูลที่ต้องการมาวางบนพื้นที่ประกอบระบบ สิ่งที่จำเป็นต้องใช้ร่วมกันจะถูกเพิ่มให้อัตโนมัติ และราคาจะอัปเดตทันที",
+  },
+  "build.startFrom": { en: "Start from", th: "เริ่มจาก" },
+  "build.reset": { en: "Start over", th: "เริ่มใหม่" },
+  "build.shelfTitle": { en: "Modules", th: "ชั้นวางโมดูล" },
+  "build.shelfHint": {
+    en: "Drag onto the canvas — or just click to add.",
+    th: "ลากไปวางบนพื้นที่ประกอบ หรือคลิกเพื่อเพิ่มได้เลย",
+  },
+  "build.canvasTitle": { en: "Your system", th: "ระบบของคุณ" },
+  "build.baseTitle": { en: "Base platform", th: "แพลตฟอร์มพื้นฐาน" },
+  "build.featuresWord": { en: "features", th: "ฟีเจอร์" },
+  "build.modulesWord": { en: "modules", th: "โมดูล" },
+  "build.perMonthShort": { en: "/mo", th: "/เดือน" },
+  "build.autoIncluded": { en: "auto-included", th: "รวมอัตโนมัติ" },
+  "build.requiredBy": { en: "Required by", th: "จำเป็นสำหรับ" },
+  "build.dropHere": { en: "Drag a module here", th: "ลากโมดูลมาวางที่นี่" },
+  "build.willAlsoAdd": { en: "Will also add:", th: "จะเพิ่มให้ด้วย:" },
+  "build.comingSoon": { en: "Coming soon", th: "เร็ว ๆ นี้" },
+  "build.roadmapNotice": {
+    en: "This module is on the roadmap and can't be added to a build yet.",
+    th: "โมดูลนี้อยู่ระหว่างการพัฒนา ยังไม่สามารถเพิ่มเข้าระบบได้",
+  },
+  "build.setupFee": { en: "One-time setup", th: "ค่าติดตั้งครั้งเดียว" },
+  "build.monthlyFee": { en: "Monthly service", th: "ค่าบริการรายเดือน" },
+  "build.students": { en: "Students", th: "จำนวนนักเรียน" },
+  "build.contactForPricing": { en: "Contact us", th: "ติดต่อเรา" },
+  "build.saves": { en: "saves", th: "ประหยัด" },
+  "build.upgradeHint": { en: "Almost at", th: "ใกล้ถึงแพ็กเกจ" },
+  "build.addWord": { en: "Add", th: "เพิ่ม" },
+  "build.getQuote": { en: "Request a quote", th: "ขอใบเสนอราคา" },
+  "build.copyLink": { en: "Copy build link", th: "คัดลอกลิงก์แบบร่าง" },
+  "build.copied": { en: "Link copied", th: "คัดลอกลิงก์แล้ว" },
+  "build.addModules": { en: "Add modules", th: "เพิ่มโมดูล" },
+  "build.tapToAdd": { en: "Tap a module to add it to your system.", th: "แตะที่โมดูลเพื่อเพิ่มเข้าระบบของคุณ" },
+  "build.remove": { en: "Remove", th: "นำออก" },
+  "build.removeTitle": { en: "Remove", th: "นำ" },
+  "build.removeBody": {
+    en: "These modules need it to work, so they'll be removed too:",
+    th: "โมดูลเหล่านี้ต้องใช้งานร่วมกัน จะถูกนำออกด้วย:",
+  },
+  "build.priceDrops": { en: "Price drops by", th: "ราคาจะลดลง" },
+  "build.removeAll": { en: "Remove all", th: "นำออกทั้งหมด" },
+  "build.cancel": { en: "Cancel", th: "ยกเลิก" },
+  "build.removed": { en: "Module removed", th: "นำโมดูลออกแล้ว" },
+  "build.undo": { en: "Undo", th: "เลิกทำ" },
+  "build.someModulesSkipped": {
+    en: "Some modules in that link are no longer available and were skipped.",
+    th: "บางโมดูลในลิงก์นี้ไม่พร้อมใช้งานแล้ว จึงถูกข้ามไป",
+  },
 };
